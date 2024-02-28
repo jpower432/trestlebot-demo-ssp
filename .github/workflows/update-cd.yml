@@ -1,0 +1,37 @@
+name: Update upstream content
+
+on: 
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Reference to sync from'
+        required: false
+        default: 'main'
+
+jobs:
+  update:
+    name: Run update
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate app token
+        uses: tibdex/github-app-token@v2.1.0
+        id: get_installation_token
+        with: 
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          permissions: >-
+            {"contents": "write", "pull_requests": "write"}
+      - name: Clone
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.get_installation_token.outputs.token }}
+      - name: Update from upstream repo
+        uses: RedHatProductSecurity/trestle-bot/actions/sync-upstreams@0.7.1
+        with:
+          branch: "sync-upstream-${{ github.run_id }}"
+          target_branch: "main"
+          commit_message: "Updates content from trestlebot-demo-cd repository [skip ci]"
+          pull_request_title: "Updates content from trestlebot-demo-cd repository"
+          github_token: ${{ steps.get_installation_token.outputs.token }}
+          sources: |
+            https://github.com/jpower432/trestlebot-demo-cd@${{ github.event.inputs.ref }}

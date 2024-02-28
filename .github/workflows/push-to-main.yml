@@ -1,0 +1,37 @@
+name: Push to main
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'profiles/**'
+      - 'catalogs/**'
+      - 'component-definitions/**'
+      - 'system-security-plans/**'
+      - 'md_ssp/**'
+
+jobs:
+
+  autosync:
+    name: Auto-update content
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate app token
+        uses: tibdex/github-app-token@v2.1.0
+        id: get_installation_token
+        with: 
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          permissions: >-
+            {"contents": "write"}
+      - name: Clone
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch }}
+          token: ${{ steps.get_installation_token.outputs.token }}
+      - name: Sync
+        id: autosync
+        uses: RedHatProductSecurity/trestle-bot/actions/autosync@v0.7.0
+        with:
+          markdown_path: "md_ssp"
+          oscal_model: "ssp"
