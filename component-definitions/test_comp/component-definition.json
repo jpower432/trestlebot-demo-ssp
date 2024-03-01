@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "49408c21-6dcb-44cf-a7d6-e4bd9026f981",
+    "uuid": "a64193eb-75e5-4e4d-a5ba-32c7986bcf32",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-02-29T18:47:29.081844+00:00",
+      "last-modified": "2024-03-01T19:38:15+00:00",
       "version": "1.0",
       "oscal-version": "1.0.4"
     },
     "components": [
       {
-        "uuid": "ff7ddd30-ee98-41be-a9e0-79e613295f0e",
+        "uuid": "f714d129-7e9e-4044-8626-a0831ef85759",
         "type": "service",
         "title": "My Comp",
         "description": "My testing comp",
@@ -65,12 +65,12 @@
         ],
         "control-implementations": [
           {
-            "uuid": "cd4baf7e-18e9-41b7-957c-1cdd2569fb02",
+            "uuid": "477551fc-40a4-4aa2-975a-b66c1c2b1534",
             "source": "trestle://profiles/example/profile.json",
             "description": "Example",
             "implemented-requirements": [
               {
-                "uuid": "9e904b41-1122-4a92-b526-248e69ea870f",
+                "uuid": "6fe16e60-67e9-4ec7-920c-0b5d265d81bb",
                 "control-id": "sc-1",
                 "description": "",
                 "props": [
@@ -78,15 +78,11 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                     "value": "rule-sc-1"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "66e07fb1-5c88-4979-b4e5-20632e899d45",
+                "uuid": "88725562-0ee3-44ce-b3d3-c3e70aed7790",
                 "control-id": "ac-2",
                 "description": "",
                 "props": [
@@ -94,15 +90,11 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                     "value": "rule-ac-2"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "b8480daf-1149-4e27-a208-c6f98f811e22",
+                "uuid": "0db9f391-86a5-44aa-b645-5d4f4c538723",
                 "control-id": "ac-4.4",
                 "description": "",
                 "props": [
@@ -110,26 +102,25 @@
                     "name": "Rule_Id",
                     "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
                     "value": "rule-ac-4.4"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
                   }
                 ]
               },
               {
-                "uuid": "505d23dc-4aad-40e1-95ea-9b1ee40486f9",
+                "uuid": "5ebbf14e-cf7b-43ea-9010-de8696e19e63",
                 "control-id": "ac-1",
-                "description": "This is an example response.",
-                "props": [
+                "description": "",
+                "statements": [
                   {
-                    "name": "Rule_Id",
-                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-                    "value": "rule-ac-1"
-                  },
-                  {
-                    "name": "implementation-status",
-                    "value": "planned"
+                    "statement-id": "ac-1_smt.a",
+                    "uuid": "f65a2ad9-8399-4409-8ef4-df824db2edef",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+                        "value": "rule-ac-1"
+                      }
+                    ]
                   }
                 ]
               }
