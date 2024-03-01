@@ -1,0 +1,10 @@
+{
+    "test_ssp": {
+        "profile": "example",
+        "component_definitions": [
+            "test_comp"
+        ],
+        "leveraged_ssp": null,
+        "yaml_header_path": null
+    }
+}
