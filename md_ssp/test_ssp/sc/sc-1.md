@@ -141,6 +141,8 @@ ______________________________________________________________________
 
 <!-- Add implementation prose for the main This System component for control: sc-1 -->
 
+This is an example response.
+
 #### Implementation Status: planned
 
 ### My Comp
