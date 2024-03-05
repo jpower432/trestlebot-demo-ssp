@@ -144,7 +144,7 @@ ______________________________________________________________________
 
 ### My Comp
 
-This is an example response.
+This is an example response for ac-1.
 
 #### Rules:
 
