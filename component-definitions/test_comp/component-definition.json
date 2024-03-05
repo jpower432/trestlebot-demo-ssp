@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "49408c21-6dcb-44cf-a7d6-e4bd9026f981",
+    "uuid": "5a7c7ec4-67f8-4a8e-b0eb-5cdd2dad64f3",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-02-29T18:47:29.081844+00:00",
+      "last-modified": "2024-03-05T17:21:55.016081+00:00",
       "version": "1.0",
       "oscal-version": "1.0.4"
     },
     "components": [
       {
-        "uuid": "ff7ddd30-ee98-41be-a9e0-79e613295f0e",
+        "uuid": "1adee2b4-2d69-4ea5-9c71-bede722ae60d",
         "type": "service",
         "title": "My Comp",
         "description": "My testing comp",
@@ -65,12 +65,12 @@
         ],
         "control-implementations": [
           {
-            "uuid": "cd4baf7e-18e9-41b7-957c-1cdd2569fb02",
+            "uuid": "690ed4e7-e36f-422c-bbe8-61207b9f5eb7",
             "source": "trestle://profiles/example/profile.json",
             "description": "Example",
             "implemented-requirements": [
               {
-                "uuid": "9e904b41-1122-4a92-b526-248e69ea870f",
+                "uuid": "31eadfb2-ee57-4d60-9cd6-119a3881bf14",
                 "control-id": "sc-1",
                 "description": "",
                 "props": [
@@ -86,15 +86,10 @@
                 ]
               },
               {
-                "uuid": "66e07fb1-5c88-4979-b4e5-20632e899d45",
+                "uuid": "a18b655e-9f72-4c38-a227-37fe9fb8f3b8",
                 "control-id": "ac-2",
                 "description": "",
                 "props": [
-                  {
-                    "name": "Rule_Id",
-                    "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-                    "value": "rule-ac-2"
-                  },
                   {
                     "name": "implementation-status",
                     "value": "planned"
@@ -102,7 +97,7 @@
                 ]
               },
               {
-                "uuid": "b8480daf-1149-4e27-a208-c6f98f811e22",
+                "uuid": "f7c338ec-9dac-45c8-b9e4-2041f79aa0b4",
                 "control-id": "ac-4.4",
                 "description": "",
                 "props": [
@@ -118,7 +113,7 @@
                 ]
               },
               {
-                "uuid": "505d23dc-4aad-40e1-95ea-9b1ee40486f9",
+                "uuid": "ac65ce88-385b-4c29-b671-b5551b0dd56d",
                 "control-id": "ac-1",
                 "description": "This is an example response.",
                 "props": [
