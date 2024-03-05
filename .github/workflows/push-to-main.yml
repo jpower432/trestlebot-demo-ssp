@@ -27,7 +27,6 @@ jobs:
       - name: Clone
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.branch }}
           token: ${{ steps.get_installation_token.outputs.token }}
       - name: Sync
         id: autosync
@@ -35,3 +34,4 @@ jobs:
         with:
           markdown_path: "md_ssp"
           oscal_model: "ssp"
+          commit_message: "Auto-sync ssp content [skip ci]"
