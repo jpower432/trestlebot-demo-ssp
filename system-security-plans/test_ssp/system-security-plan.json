@@ -3,7 +3,7 @@
     "uuid": "807b7582-e633-4d3f-b1b0-8774c63aceba",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2024-03-01T18:46:21.867074+00:00",
+      "last-modified": "2024-03-05T20:01:50.341687+00:00",
       "version": "REPLACE_ME",
       "oscal-version": "1.0.4"
     },
@@ -133,24 +133,17 @@
           "control-id": "sc-1",
           "by-components": [
             {
-              "component-uuid": "ff7ddd30-ee98-41be-a9e0-79e613295f0e",
-              "uuid": "cdcaed93-1a70-4af7-84b8-b81b182bea3e",
-              "description": "",
-              "props": [
-                {
-                  "name": "Rule_Id",
-                  "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-                  "value": "rule-sc-1"
-                }
-              ],
+              "component-uuid": "501fb198-4d33-431a-b7c8-1453bd7b52c8",
+              "uuid": "6683acac-cea0-4eaa-b092-0c67439cb9ed",
+              "description": "This is an example response.",
               "implementation-status": {
                 "state": "planned"
               }
             },
             {
-              "component-uuid": "501fb198-4d33-431a-b7c8-1453bd7b52c8",
-              "uuid": "6683acac-cea0-4eaa-b092-0c67439cb9ed",
-              "description": "This is an example response.",
+              "component-uuid": "75387f0b-b1e3-4940-bb2b-29c9599c3dd9",
+              "uuid": "0391cc4f-8ee1-4af5-a70b-ff00820f13cd",
+              "description": "",
               "implementation-status": {
                 "state": "planned"
               }
@@ -162,23 +155,16 @@
           "control-id": "ac-2",
           "by-components": [
             {
-              "component-uuid": "ff7ddd30-ee98-41be-a9e0-79e613295f0e",
-              "uuid": "d9badcfe-9212-4267-ae5b-70cb7f6f1c3f",
+              "component-uuid": "501fb198-4d33-431a-b7c8-1453bd7b52c8",
+              "uuid": "2524e012-3612-4960-9346-eca6605926ce",
               "description": "",
-              "props": [
-                {
-                  "name": "Rule_Id",
-                  "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-                  "value": "rule-ac-2"
-                }
-              ],
               "implementation-status": {
                 "state": "planned"
               }
             },
             {
-              "component-uuid": "501fb198-4d33-431a-b7c8-1453bd7b52c8",
-              "uuid": "2524e012-3612-4960-9346-eca6605926ce",
+              "component-uuid": "75387f0b-b1e3-4940-bb2b-29c9599c3dd9",
+              "uuid": "5d6d264a-cf25-416c-9b9f-9a407c8b38be",
               "description": "",
               "implementation-status": {
                 "state": "planned"
@@ -191,23 +177,16 @@
           "control-id": "ac-4.4",
           "by-components": [
             {
-              "component-uuid": "ff7ddd30-ee98-41be-a9e0-79e613295f0e",
-              "uuid": "90433b1b-abc9-4944-b46a-f82f503eb8ee",
+              "component-uuid": "501fb198-4d33-431a-b7c8-1453bd7b52c8",
+              "uuid": "9bb706ce-38eb-4734-82b2-d45b17bf9f07",
               "description": "",
-              "props": [
-                {
-                  "name": "Rule_Id",
-                  "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-                  "value": "rule-ac-4.4"
-                }
-              ],
               "implementation-status": {
                 "state": "planned"
               }
             },
             {
-              "component-uuid": "501fb198-4d33-431a-b7c8-1453bd7b52c8",
-              "uuid": "9bb706ce-38eb-4734-82b2-d45b17bf9f07",
+              "component-uuid": "75387f0b-b1e3-4940-bb2b-29c9599c3dd9",
+              "uuid": "eaf9c20a-6359-4044-af97-04ef3d2bff63",
               "description": "",
               "implementation-status": {
                 "state": "planned"
@@ -220,24 +199,17 @@
           "control-id": "ac-1",
           "by-components": [
             {
-              "component-uuid": "ff7ddd30-ee98-41be-a9e0-79e613295f0e",
-              "uuid": "1f17e66f-23b4-42ab-8b07-3a3ca06c212f",
-              "description": "This is an example response.",
-              "props": [
-                {
-                  "name": "Rule_Id",
-                  "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-                  "value": "rule-ac-1"
-                }
-              ],
+              "component-uuid": "501fb198-4d33-431a-b7c8-1453bd7b52c8",
+              "uuid": "4779c9cf-2993-40d1-b073-2cc8bc7b45c6",
+              "description": "",
               "implementation-status": {
                 "state": "planned"
               }
             },
             {
-              "component-uuid": "501fb198-4d33-431a-b7c8-1453bd7b52c8",
-              "uuid": "4779c9cf-2993-40d1-b073-2cc8bc7b45c6",
-              "description": "",
+              "component-uuid": "75387f0b-b1e3-4940-bb2b-29c9599c3dd9",
+              "uuid": "bb76813a-a471-4386-b738-7cdc98adabe0",
+              "description": "This is an example response.",
               "implementation-status": {
                 "state": "planned"
               }
