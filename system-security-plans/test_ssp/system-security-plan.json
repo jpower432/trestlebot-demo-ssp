@@ -3,7 +3,7 @@
     "uuid": "807b7582-e633-4d3f-b1b0-8774c63aceba",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2024-03-05T20:01:50.341687+00:00",
+      "last-modified": "2024-03-05T20:46:51.204915+00:00",
       "version": "REPLACE_ME",
       "oscal-version": "1.0.4"
     },
@@ -209,7 +209,7 @@
             {
               "component-uuid": "75387f0b-b1e3-4940-bb2b-29c9599c3dd9",
               "uuid": "bb76813a-a471-4386-b738-7cdc98adabe0",
-              "description": "This is an example response.",
+              "description": "This is an example response for ac-1.",
               "implementation-status": {
                 "state": "planned"
               }
