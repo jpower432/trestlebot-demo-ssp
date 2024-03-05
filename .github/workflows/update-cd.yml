@@ -52,10 +52,11 @@ jobs:
       - name: Clone
         uses: actions/checkout@v4
         with:
+          ref: "sync-upstream-${{ github.run_id }}"
           token: ${{ steps.get_installation_token.outputs.token }}
-      - name: Update from upstream repo
+      - name: Regenerate SSP Markdown
         uses: RedHatProductSecurity/trestle-bot/actions/autosync@v0.7.1
         with:
-          branch: "sync-upstream-${{ github.run_id }}"
           markdown_path: "md_ssp"
           oscal_model: "ssp"
+          skip_assemble: "true"
