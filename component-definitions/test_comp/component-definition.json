@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "f7e45d8c-8ed5-423d-b596-a80b92f992f8",
+    "uuid": "7386f0c8-eeb9-443a-bf28-f0e706331bf8",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-03-05T19:34:43.845471+00:00",
+      "last-modified": "2024-03-06T21:49:36.157018+00:00",
       "version": "1.0",
       "oscal-version": "1.0.4"
     },
     "components": [
       {
-        "uuid": "75387f0b-b1e3-4940-bb2b-29c9599c3dd9",
+        "uuid": "4cd6352c-9b84-4c3a-a6a6-49f867590c07",
         "type": "service",
         "title": "My Comp",
         "description": "My testing comp",
@@ -47,7 +47,7 @@
           {
             "name": "Rule_Description",
             "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-            "value": "Rule for ac-4.4",
+            "value": "Rule for ac-4.4 extra again",
             "remarks": "rule_set_2"
           },
           {
@@ -65,12 +65,12 @@
         ],
         "control-implementations": [
           {
-            "uuid": "edb42ace-1ccf-4f19-a2cf-67444c89c136",
+            "uuid": "1c303d51-f02a-4ca6-a73c-03f1cc54e509",
             "source": "trestle://profiles/example/profile.json",
             "description": "Example",
             "implemented-requirements": [
               {
-                "uuid": "bce09584-a1c9-41ba-a7e6-c2d0e9d7f669",
+                "uuid": "fe2f23e2-523a-46a7-8bbb-57be955035c1",
                 "control-id": "sc-1",
                 "description": "",
                 "props": [
@@ -86,7 +86,7 @@
                 ]
               },
               {
-                "uuid": "6fc07176-6353-40ec-8e30-26160e4a2b05",
+                "uuid": "18c286e5-c96d-4e30-9476-3088753e9829",
                 "control-id": "ac-2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -98,8 +98,8 @@
                 "statements": [
                   {
                     "statement-id": "ac-2_smt.d",
-                    "uuid": "1d1af20e-0543-462f-a972-5c014e0b49f7",
-                    "description": "",
+                    "uuid": "cff63470-cb90-4262-baf3-071dba3068e9",
+                    "description": "My implementation description for ac-2 part d.",
                     "props": [
                       {
                         "name": "Rule_Id",
@@ -108,14 +108,14 @@
                       },
                       {
                         "name": "implementation-status",
-                        "value": "planned"
+                        "value": "implemented"
                       }
                     ]
                   }
                 ]
               },
               {
-                "uuid": "6c01959f-285a-4905-986e-8375c9ef7440",
+                "uuid": "3c8642e6-cb7d-414d-85c3-24b0957f5148",
                 "control-id": "ac-4.4",
                 "description": "",
                 "props": [
@@ -131,9 +131,9 @@
                 ]
               },
               {
-                "uuid": "9f817447-a797-4022-a687-b86f44909306",
+                "uuid": "225a56f0-c2be-4c79-9b6a-7f7c7b5c3475",
                 "control-id": "ac-1",
-                "description": "MY example response for ac-1/",
+                "description": "MY example response for ac-1.",
                 "props": [
                   {
                     "name": "Rule_Id",
@@ -148,7 +148,7 @@
                 "statements": [
                   {
                     "statement-id": "ac-1_smt.a",
-                    "uuid": "275d8dd2-4aed-448c-93ec-845e916a7cac",
+                    "uuid": "c3491dc4-75d5-4746-9894-0d2b6d4b3fa5",
                     "description": "My example responses for ac-1 part a.",
                     "props": [
                       {
