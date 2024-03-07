@@ -3,7 +3,7 @@
     "uuid": "807b7582-e633-4d3f-b1b0-8774c63aceba",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2024-03-05T20:46:51.204915+00:00",
+      "last-modified": "2024-03-07T16:38:29.919120+00:00",
       "version": "REPLACE_ME",
       "oscal-version": "1.0.4"
     },
@@ -64,25 +64,25 @@
             {
               "name": "Rule_Id",
               "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-              "value": "rule-sc-1",
-              "remarks": "rule_set_0"
-            },
-            {
-              "name": "Rule_Description",
-              "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-              "value": "Rule for sc-1",
-              "remarks": "rule_set_0"
-            },
-            {
-              "name": "Rule_Id",
-              "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
               "value": "rule-ac-2",
-              "remarks": "rule_set_1"
+              "remarks": "rule_set_0"
             },
             {
               "name": "Rule_Description",
               "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
               "value": "Rule for ac-2",
+              "remarks": "rule_set_0"
+            },
+            {
+              "name": "Rule_Id",
+              "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+              "value": "rule-ac-1",
+              "remarks": "rule_set_1"
+            },
+            {
+              "name": "Rule_Description",
+              "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+              "value": "Rule for ac-1",
               "remarks": "rule_set_1"
             },
             {
@@ -94,19 +94,19 @@
             {
               "name": "Rule_Description",
               "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-              "value": "Rule for ac-4.4",
+              "value": "Rule for ac-4.4 extra again",
               "remarks": "rule_set_2"
             },
             {
               "name": "Rule_Id",
               "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-              "value": "rule-ac-1",
+              "value": "rule-sc-1",
               "remarks": "rule_set_3"
             },
             {
               "name": "Rule_Description",
               "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
-              "value": "Rule for ac-1",
+              "value": "Rule for sc-1",
               "remarks": "rule_set_3"
             }
           ],
@@ -141,8 +141,8 @@
               }
             },
             {
-              "component-uuid": "75387f0b-b1e3-4940-bb2b-29c9599c3dd9",
-              "uuid": "0391cc4f-8ee1-4af5-a70b-ff00820f13cd",
+              "component-uuid": "d2eb4fc3-c0e2-4eb5-8c33-faa1ee443001",
+              "uuid": "fa146225-104d-4b5e-88b6-06b67e045993",
               "description": "",
               "implementation-status": {
                 "state": "planned"
@@ -163,8 +163,8 @@
               }
             },
             {
-              "component-uuid": "75387f0b-b1e3-4940-bb2b-29c9599c3dd9",
-              "uuid": "5d6d264a-cf25-416c-9b9f-9a407c8b38be",
+              "component-uuid": "d2eb4fc3-c0e2-4eb5-8c33-faa1ee443001",
+              "uuid": "6dceddf0-88ec-45d7-999c-df4956e5c875",
               "description": "",
               "implementation-status": {
                 "state": "planned"
@@ -185,8 +185,8 @@
               }
             },
             {
-              "component-uuid": "75387f0b-b1e3-4940-bb2b-29c9599c3dd9",
-              "uuid": "eaf9c20a-6359-4044-af97-04ef3d2bff63",
+              "component-uuid": "d2eb4fc3-c0e2-4eb5-8c33-faa1ee443001",
+              "uuid": "7fddf8b4-f0a6-40d3-a79f-6f4953f22b63",
               "description": "",
               "implementation-status": {
                 "state": "planned"
@@ -207,8 +207,8 @@
               }
             },
             {
-              "component-uuid": "75387f0b-b1e3-4940-bb2b-29c9599c3dd9",
-              "uuid": "bb76813a-a471-4386-b738-7cdc98adabe0",
+              "component-uuid": "d2eb4fc3-c0e2-4eb5-8c33-faa1ee443001",
+              "uuid": "e801d8aa-5e02-46e1-9b4a-331d4499dd03",
               "description": "This is an example response for ac-1.",
               "implementation-status": {
                 "state": "planned"
