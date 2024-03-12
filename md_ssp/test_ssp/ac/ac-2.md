@@ -1,8 +1,4 @@
 ---
-x-trestle-comp-def-rules:
-  My Comp:
-    - name: rule-ac-2
-      description: Rule for ac-2
 x-trestle-set-params:
   # You may set values for parameters in the assembled SSP by adding
   #
@@ -191,17 +187,6 @@ ______________________________________________________________________
 ### This System
 
 <!-- Add implementation prose for the main This System component for control: ac-2 -->
-My example implementation for this system
-
-#### Implementation Status: planned
-
-### My Comp
-
-<!-- Add control implementation description here for control: ac-2 -->
-
-#### Rules:
-
-  - rule-ac-2
 
 #### Implementation Status: planned
 

@@ -2,7 +2,7 @@
 x-trestle-comp-def-rules:
   My Comp:
     - name: rule-ac-4.4
-      description: Rule for ac-4.4
+      description: Rule for ac-4.4 extra again
 x-trestle-set-params:
   # You may set values for parameters in the assembled SSP by adding
   #
@@ -66,7 +66,6 @@ ______________________________________________________________________
 ### This System
 
 <!-- Add implementation prose for the main This System component for control: ac-4.4 -->
-My example implementation for this system
 
 #### Implementation Status: planned
 
