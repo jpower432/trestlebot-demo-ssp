@@ -3,6 +3,28 @@ x-trestle-comp-def-rules:
   My Comp:
     - name: rule-ac-1
       description: Rule for ac-1
+x-trestle-rules-params:
+  My Comp:
+    - name: prm_1
+      description: prm_1 description
+      options: "{'default': '5%', '5pc': '5%', '10pc': '10%', '15pc': '15%', '20pc':
+        '20%'}"
+      rule-id: rule-ac-1
+x-trestle-comp-def-rules-param-vals:
+  # You may set new values for rule parameters by adding
+  #
+  # ssp-values:
+  #   - value 1
+  #   - value 2
+  #
+  # below a section of values:
+  # The values list refers to the values as set by the components, and the ssp-values are the new values
+  # to be placed in SetParameters of the SSP.
+  #
+  My Comp:
+    - name: prm_1
+      values:
+        - 5%
 x-trestle-set-params:
   # You may set values for parameters in the assembled SSP by adding
   #
@@ -66,28 +88,6 @@ x-trestle-global:
     title: Example
     href: trestle://profiles/example/profile.json
   sort-id: ac-01
-x-trestle-rules-params:
-  My Comp:
-    - name: prm_1
-      description: prm_1 description
-      options: "{'default': '5%', '5pc': '5%', '10pc': '10%', '15pc': '15%', '20pc':
-        '20%'}"
-      rule-id: rule-ac-1
-x-trestle-comp-def-rules-param-vals:
-  # You may set new values for rule parameters by adding
-  #
-  # ssp-values:
-  #   - value 1
-  #   - value 2
-  #
-  # below a section of values:
-  # The values list refers to the values as set by the components, and the ssp-values are the new values
-  # to be placed in SetParameters of the SSP.
-  #
-  My Comp:
-    - name: prm_1
-      values:
-        - 5%
 ---
 
 # ac-1 - \[Access Control\] Policy and Procedures
@@ -162,13 +162,15 @@ ______________________________________________________________________
 
 <!-- Add implementation prose for the main This System component for control: ac-1 -->
 
-My example implementation for this system
-
 #### Implementation Status: planned
+
+______________________________________________________________________
+
+## Implementation for part a.
 
 ### My Comp
 
-This is an example response for ac-1.
+My example responses for ac-1 part a.
 
 #### Rules:
 

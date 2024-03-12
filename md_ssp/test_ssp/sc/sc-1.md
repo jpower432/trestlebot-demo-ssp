@@ -139,13 +139,13 @@ ______________________________________________________________________
 
 ### This System
 
-This is an example response.
+<!-- Add implementation prose for the main This System component for control: sc-1 -->
 
 #### Implementation Status: planned
 
 ### My Comp
 
-<!-- Add control implementation description here for control: sc-1 -->
+This is the responses for sc-1
 
 #### Rules:
 
