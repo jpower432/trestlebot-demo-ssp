@@ -25,6 +25,10 @@ x-trestle-global:
     title: Example
     href: trestle://profiles/example/profile.json
   sort-id: ac-02.02
+x-trestle-comp-def-rules:
+  My Comp:
+    - name: rule-ac-2.2
+      description: Rule for ac-2.2
 ---
 
 # ac-2.2 - \[Access Control\] Automated Temporary and Emergency Account Management
