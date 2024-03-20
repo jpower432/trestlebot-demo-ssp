@@ -3,8 +3,8 @@
     "uuid": "ee0f6f34-78ba-4170-baeb-3d217da79263",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-03-12T20:53:43.245045+00:00",
-      "version": "1.0",
+      "last-modified": "2024-03-20T19:02:00.144956+00:00",
+      "version": "0.0.10",
       "oscal-version": "1.0.4"
     },
     "components": [
