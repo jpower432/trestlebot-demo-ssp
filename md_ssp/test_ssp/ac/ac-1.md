@@ -160,7 +160,6 @@ ______________________________________________________________________
 
 ### This System
 
-<!-- Add implementation prose for the main This System component for control: ac-1 -->
 This system implementation
 
 #### Implementation Status: planned

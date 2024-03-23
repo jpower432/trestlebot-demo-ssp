@@ -3,8 +3,8 @@
     "uuid": "c8a7000d-d93e-414a-b4d1-001a91e28a34",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2024-03-12T17:54:14.821661-04:00",
-      "version": "REPLACE_ME",
+      "last-modified": "2024-03-23T01:40:56.647196+00:00",
+      "version": "1.0.0",
       "oscal-version": "1.0.4"
     },
     "import-profile": {
@@ -242,7 +242,7 @@
             {
               "component-uuid": "77924fd0-398c-44b8-bb2c-d862025fcd0b",
               "uuid": "283c8925-9dbb-4503-af19-843ed5484437",
-              "description": "",
+              "description": "This system implementation",
               "implementation-status": {
                 "state": "planned"
               }
