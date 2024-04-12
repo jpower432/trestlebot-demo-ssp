@@ -3,8 +3,8 @@
     "uuid": "ee0f6f34-78ba-4170-baeb-3d217da79263",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-03-20T19:02:00.144956+00:00",
-      "version": "0.0.10",
+      "last-modified": "2024-04-12T15:21:24.615042+00:00",
+      "version": "0.0.12",
       "oscal-version": "1.0.4"
     },
     "components": [
@@ -114,7 +114,7 @@
               {
                 "uuid": "44f8b6d8-cc0c-47d9-9ac0-074ceace9e5c",
                 "control-id": "ac-2.2",
-                "description": "My implementation for ac-2.2",
+                "description": "My implementation for ac-2.2 with additional information",
                 "props": [
                   {
                     "name": "Rule_Id",
@@ -130,7 +130,7 @@
               {
                 "uuid": "682f09dd-c71d-44e9-ba16-65b42f5d14eb",
                 "control-id": "ac-1",
-                "description": "MY example response for ac-1.",
+                "description": "MY example response for ac-1 with additional information.",
                 "props": [
                   {
                     "name": "implementation-status",
