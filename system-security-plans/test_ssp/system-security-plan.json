@@ -3,7 +3,7 @@
     "uuid": "c8a7000d-d93e-414a-b4d1-001a91e28a34",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2024-04-29T21:49:24.138849+00:00",
+      "last-modified": "2024-04-29T22:00:34.243325+00:00",
       "version": "1.0.0",
       "oscal-version": "1.0.4"
     },
@@ -236,7 +236,7 @@
             {
               "component-uuid": "77924fd0-398c-44b8-bb2c-d862025fcd0b",
               "uuid": "283c8925-9dbb-4503-af19-843ed5484437",
-              "description": "This system implementation",
+              "description": "This system implementation for ac-1",
               "implementation-status": {
                 "state": "planned"
               }
