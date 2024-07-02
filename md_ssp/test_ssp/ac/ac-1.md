@@ -160,7 +160,7 @@ ______________________________________________________________________
 
 ### This System
 
-This system implementation for ac-1
+This system implementation for ac-1.
 
 #### Implementation Status: planned
 
@@ -176,6 +176,6 @@ My example responses for ac-1 part a.
 
   - rule-ac-1
 
-#### Implementation Status: planned
+#### Implementation Status: partial
 
 ______________________________________________________________________
