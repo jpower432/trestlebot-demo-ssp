@@ -70,6 +70,23 @@ x-trestle-global:
     title: Example
     href: trestle://profiles/example/profile.json
   sort-id: ac-02
+x-trestle-fedramp-props:
+  control-origination:
+    - name: control-origination
+      ns: https://fedramp.gov/ns/oscal
+      value: sp-system
+    - name: control-origination
+      ns: https://fedramp.gov/ns/oscal
+      value: sp-corporate
+    - name: control-origination
+      ns: https://fedramp.gov/ns/oscal
+      value: customer-configured
+    - name: control-origination
+      ns: https://fedramp.gov/ns/oscal
+      value: customer-provided
+    - name: control-origination
+      ns: https://fedramp.gov/ns/oscal
+      value: inherited
 ---
 
 # ac-2 - \[Access Control\] Account Management
