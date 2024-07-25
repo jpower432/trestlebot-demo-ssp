@@ -52,6 +52,18 @@ x-trestle-fedramp-props:
     - name: control-origination
       ns: https://fedramp.gov/ns/oscal
       value: inherited
+x-trestle-add-props: []
+  # Add or modify control properties here
+  # Properties may be at the control or part level
+  # Add control level properties like this:
+  #   - name: ac1_new_prop
+  #     value: new property value
+  #
+  # Add properties to a statement part like this, where "b." is the label of the target statement part
+  #   - name: ac1_new_prop
+  #     value: new property value
+  #     smt-part: b.
+  #
 ---
 
 # ac-4.4 - \[Access Control\] Flow Control of Encrypted Information
