@@ -46,6 +46,40 @@ x-trestle-fedramp-props:
     - name: control-origination
       ns: https://fedramp.gov/ns/oscal
       value: inherited
+x-trestle-add-props: []
+  # Add or modify control properties here
+  # Properties may be at the control or part level
+  # Add control level properties like this:
+  #   - name: ac1_new_prop
+  #     value: new property value
+  #
+  # Add properties to a statement part like this, where "b." is the label of the target statement part
+  #   - name: ac1_new_prop
+  #     value: new property value
+  #     smt-part: b.
+  #
+x-trestle-rules-params:
+  My Comp:
+    - name: prm_1
+      description: prm_1 description
+      options: '{"default": "20%", "5pc": "5%", "10pc": "10%", "15pc": "15%", "20pc":
+        "20%"}'
+      rule-id: rule-ac-2.2
+x-trestle-comp-def-rules-param-vals:
+  # You may set new values for rule parameters by adding
+  #
+  # ssp-values:
+  #   - value 1
+  #   - value 2
+  #
+  # below a section of values:
+  # The values list refers to the values as set by the components, and the ssp-values are the new values
+  # to be placed in SetParameters of the SSP.
+  #
+  My Comp:
+    - name: prm_1
+      values:
+        - 20%
 ---
 
 # ac-2.2 - \[Access Control\] Automated Temporary and Emergency Account Management
