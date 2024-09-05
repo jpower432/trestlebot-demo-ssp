@@ -1,0 +1,27 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'profiles/**'
+      - 'catalogs/**'
+      - 'component-definitions/**'
+      - 'system-security-plans/**'
+      - 'md_ssp/**'
+
+jobs:
+
+  autosync:
+    name: Auto-update content
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone
+        uses: actions/checkout@v4
+      - name: Sync
+        id: autosync
+        uses: RedHatProductSecurity/trestle-bot/actions/autosync@main
+        with:
+          markdown_path: "md_ssp"
+          oscal_model: "ssp"
+          dry_run: true
