@@ -189,7 +189,7 @@ ______________________________________________________________________
 
 ### This System
 
-This system implementation for ac-1 with additional information.
+This system implementation for ac-1.
 
 #### Implementation Status: planned
 
