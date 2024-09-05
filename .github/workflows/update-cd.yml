@@ -36,6 +36,7 @@ jobs:
           github_token: ${{ steps.get_installation_token.outputs.token }}
           sources: |
             https://github.com/jpower432/trestlebot-demo-cd@${{ github.event.inputs.ref }}
+            https://github.com/jpower432/oscal-authoring-demo@main
       - name: Regenerate SSP Markdown
         if: ${{ steps.sync_upstreams.outputs.commit }}
         uses: RedHatProductSecurity/trestle-bot/actions/autosync@main
