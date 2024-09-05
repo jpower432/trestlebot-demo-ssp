@@ -67,8 +67,8 @@ x-trestle-set-params:
     profile-param-value-origin: <REPLACE_ME>
 x-trestle-global:
   profile:
-    title: Example
-    href: trestle://profiles/example/profile.json
+    title: FedRAMP Rev 5 Low Baseline
+    href: trestle://profiles/fedramp_rev5_low/profile.json
   sort-id: ac-02
 x-trestle-fedramp-props:
   control-origination:
@@ -99,6 +99,25 @@ x-trestle-add-props: []
   #     value: new property value
   #     smt-part: b.
   #
+x-trestle-comp-def-rules:
+  ocp4:
+    - name: idp_is_configured
+      description: For users to interact with OpenShift Container Platform, they must
+        first authenticate to the cluster. The authentication layer identifies the
+        user associated with requests to the OpenShift Container Platform API. The
+        authorization layer then uses information about the requesting user to determine
+        if the request is allowed. Understanding authentication | Authentication |
+        OpenShift Container Platform The OpenShift Container Platform includes a built-in
+        OAuth server for token-based authentication. Developers and administrators
+        obtain OAuth access tokens to authenticate themselves to the API. It is recommended
+        for an administrator to configure OAuth to specify an identity provider after
+        the cluster is installed. User access to the cluster is managed through the
+        identity provider. Understanding identity provider configuration | Authentication
+        | OpenShift Container Platform OpenShift includes built-in role based access
+        control (RBAC) to determine whether a user is allowed to perform a given action
+        within the cluster. Roles can have cluster scope or local (i.e. project) scope.
+        Using RBAC to define and apply permissions | Authentication | OpenShift Container
+        Platform
 ---
 
 # ac-2 - \[Access Control\] Account Management

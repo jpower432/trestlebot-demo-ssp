@@ -85,8 +85,8 @@ x-trestle-set-params:
     profile-param-value-origin: <REPLACE_ME>
 x-trestle-global:
   profile:
-    title: Example
-    href: trestle://profiles/example/profile.json
+    title: FedRAMP Rev 5 Low Baseline
+    href: trestle://profiles/fedramp_rev5_low/profile.json
   sort-id: ac-01
 x-trestle-fedramp-props:
   control-origination:
