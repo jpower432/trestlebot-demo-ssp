@@ -1,8 +1,9 @@
 {
     "test_ssp": {
-        "profile": "example",
+        "profile": "fedramp_rev5_low",
         "component_definitions": [
-            "test_comp"
+            "test_comp",
+            "ocp4"
         ],
         "leveraged_ssp": null,
         "yaml_header_path": "./extra/extra-yaml-header.yaml"

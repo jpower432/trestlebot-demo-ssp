@@ -1,0 +1,60 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate app token
+        uses: tibdex/github-app-token@v2.1.0
+        id: get_installation_token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          permissions: >-
+            {"contents": "write"}
+      - name: Clone
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.get_installation_token.outputs.token }}
+      - name: Autosync
+        uses: RedHatProductSecurity/trestle-bot/actions/autosync@main
+        with:
+          markdown_path: "md_ssp"
+          oscal_model: "ssp"
+          commit_message: "Update content for release [skip ci]"
+          version: ${{ github.event.inputs.version }}
+      - name: Create and push tags
+        env:
+          VERSION: ${{ github.event.inputs.version }}
+        run: |
+            git tag "${VERSION}"
+            git push origin "${VERSION}"
+  release:
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/continuouscompliance/trestle-bot:v0.10.1
+    needs: build
+    steps:
+      - name: Install FedRAMP plugin
+        run: pip install git+https://github.com/oscal-compass/compliance-trestle-fedramp.git@feat/fedramp-transform-responsible-role
+      - name: FedRAMP Validate
+        run: trestle fedramp-validate -f "$SSP_FILE" -o results
+        continue-on-error: true
+      - name: Create SSP Report
+        run: trestle fedramp-transform -l low --ssp-name test_ssp -o "example.docx"
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          name: Release v${{ github.event.inputs.version }}
+          tag_name: ${{ github.event.inputs.version }}
+          files: |
+            example.docx
+

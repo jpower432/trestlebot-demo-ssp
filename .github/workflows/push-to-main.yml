@@ -10,8 +10,11 @@ on:
       - 'system-security-plans/**'
       - 'md_ssp/**'
 
-jobs:
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
 
+jobs:
   autosync:
     name: Auto-update content
     runs-on: ubuntu-latest
