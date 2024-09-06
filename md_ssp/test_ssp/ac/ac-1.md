@@ -189,7 +189,7 @@ ______________________________________________________________________
 
 ### This System
 
-This system implementation for ac-1.
+This system implementation for ac-1 for additional information for my system.
 
 #### Implementation Status: planned
 
@@ -199,7 +199,7 @@ ______________________________________________________________________
 
 ### My Comp
 
-My example responses for ac-1 part a.
+My example responses for ac-1 part a for additional information.
 
 #### Rules:
 
