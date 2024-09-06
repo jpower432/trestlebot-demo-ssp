@@ -38,14 +38,18 @@ jobs:
             git push origin "${VERSION}"
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     container:
       image: quay.io/continuouscompliance/trestle-bot:v0.10.1
     needs: build
     steps:
+      - name: Clone
+        uses: actions/checkout@v4
       - name: Install FedRAMP plugin
         run: pip install git+https://github.com/oscal-compass/compliance-trestle-fedramp.git@feat/fedramp-transform-responsible-role
       - name: FedRAMP Validate
-        run: trestle fedramp-validate -f "$SSP_FILE" -o results
+        run: trestle fedramp-validate -f system-security-plans/test_ssp/system-security-plan.json -o "."
         continue-on-error: true
       - name: Create SSP Report
         run: trestle fedramp-transform -l low --ssp-name test_ssp -o "example.docx"
@@ -56,5 +60,6 @@ jobs:
           name: Release v${{ github.event.inputs.version }}
           tag_name: ${{ github.event.inputs.version }}
           files: |
+            fedramp-validation-report.html
             example.docx
 
