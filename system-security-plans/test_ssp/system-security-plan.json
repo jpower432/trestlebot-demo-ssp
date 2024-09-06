@@ -3,7 +3,7 @@
     "uuid": "b1a47e86-77a7-477a-884a-0e2794716db7",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2024-09-06T13:09:13.058859+00:00",
+      "last-modified": "2024-09-06T14:48:09.070164+00:00",
       "version": "0.0.1",
       "oscal-version": "1.1.2"
     },
@@ -3146,7 +3146,7 @@
                 {
                   "component-uuid": "ccc99dad-9d38-4b77-a801-194477e0ed30",
                   "uuid": "6860a73f-ffe0-4454-b7f3-e90aad4d284d",
-                  "description": "My example responses for ac-1 part a.",
+                  "description": "My example responses for ac-1 part a for additional information.",
                   "props": [
                     {
                       "name": "Rule_Id",
@@ -3173,7 +3173,7 @@
             {
               "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
               "uuid": "77aaecfc-8b92-4280-a2db-6b6da74fcd8d",
-              "description": "This system implementation for ac-1.",
+              "description": "This system implementation for ac-1 for additional information for my system.",
               "implementation-status": {
                 "state": "planned"
               }
