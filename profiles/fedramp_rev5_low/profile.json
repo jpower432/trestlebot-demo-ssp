@@ -95,7 +95,7 @@
     },
     "imports": [
       {
-        "href": "trestle://catalogs/nist_rev5_800_53/catalog.json",
+        "href": "#051a77c1-b61d-4995-8275-dacfe688d510",
         "include-controls": [
           {
             "with-ids": [

@@ -3,8 +3,8 @@
     "uuid": "d12a0919-6749-437d-859b-0817edab9f65",
     "metadata": {
       "title": "Component definition for test_comp",
-      "last-modified": "2024-09-05T22:08:56.401503+00:00",
-      "version": "0.0.16",
+      "last-modified": "2024-09-06T14:39:07.818837+00:00",
+      "version": "0.0.17",
       "oscal-version": "1.1.2"
     },
     "components": [
@@ -175,7 +175,7 @@
                   {
                     "statement-id": "ac-1_smt.a",
                     "uuid": "38db6ff7-1145-45f6-a5ae-42e83de8af9c",
-                    "description": "My example responses for ac-1 part a for My Comp",
+                    "description": "My example responses for ac-1 part a for My Comp with some additional information.",
                     "props": [
                       {
                         "name": "Rule_Id",
