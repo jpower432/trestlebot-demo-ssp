@@ -1,14 +1,14 @@
 {
   "system-security-plan": {
-    "uuid": "c8a7000d-d93e-414a-b4d1-001a91e28a34",
+    "uuid": "b1a47e86-77a7-477a-884a-0e2794716db7",
     "metadata": {
       "title": "REPLACE_ME",
-      "last-modified": "2024-09-05T22:54:33.148650+00:00",
-      "version": "1.0.0",
-      "oscal-version": "1.0.4"
+      "last-modified": "2024-09-06T13:04:10.503247+00:00",
+      "version": "REPLACE_ME",
+      "oscal-version": "1.1.2"
     },
     "import-profile": {
-      "href": "trestle://profiles/example/profile.json"
+      "href": "trestle://profiles/fedramp_rev5_low/profile.json"
     },
     "system-characteristics": {
       "system-ids": [
@@ -18,28 +18,13 @@
       ],
       "system-name": "REPLACE_ME",
       "description": "REPLACE_ME",
-      "security-sensitivity-level": "REPLACE_ME",
       "system-information": {
         "information-types": [
           {
             "title": "REPLACE_ME",
-            "description": "REPLACE_ME",
-            "confidentiality-impact": {
-              "base": "REPLACE_ME"
-            },
-            "integrity-impact": {
-              "base": "REPLACE_ME"
-            },
-            "availability-impact": {
-              "base": "REPLACE_ME"
-            }
+            "description": "REPLACE_ME"
           }
         ]
-      },
-      "security-impact-level": {
-        "security-objective-confidentiality": "REPLACE_ME",
-        "security-objective-integrity": "REPLACE_ME",
-        "security-objective-availability": "REPLACE_ME"
       },
       "status": {
         "state": "operational"
@@ -51,12 +36,12 @@
     "system-implementation": {
       "users": [
         {
-          "uuid": "f9658efc-2ffb-42c4-ae15-de85b77a5c25"
+          "uuid": "280aae3a-c58b-4cb2-877e-74ebbbacb127"
         }
       ],
       "components": [
         {
-          "uuid": "a6ce96d1-fa18-47cf-b2af-56c2a14bc71e",
+          "uuid": "ccc99dad-9d38-4b77-a801-194477e0ed30",
           "type": "service",
           "title": "My Comp",
           "description": "My testing comp",
@@ -3108,7 +3093,7 @@
           }
         },
         {
-          "uuid": "77924fd0-398c-44b8-bb2c-d862025fcd0b",
+          "uuid": "3181a80f-fb12-4434-a726-530902012b16",
           "type": "this-system",
           "title": "This System",
           "description": "",
@@ -3122,43 +3107,28 @@
       "description": "This is the control implementation for the system.",
       "implemented-requirements": [
         {
-          "uuid": "4fd0da5d-68c4-4c55-8ee1-bd44ca7108ab",
+          "uuid": "a418f2bb-9af9-4273-9c32-772fff226d0a",
           "control-id": "sc-1",
           "by-components": [
             {
-              "component-uuid": "77924fd0-398c-44b8-bb2c-d862025fcd0b",
-              "uuid": "0881a5de-1a7e-4f6b-aec3-a10d6985e46c",
-              "description": "",
-              "implementation-status": {
-                "state": "planned"
-              }
-            },
-            {
               "component-uuid": "ccc99dad-9d38-4b77-a801-194477e0ed30",
-              "uuid": "78356a9b-ce6c-4757-b82b-442bb66b2f6c",
+              "uuid": "5741681c-9063-44ec-898f-fc3635b5276c",
               "description": "This is the responses for sc-1",
-              "implementation-status": {
-                "state": "planned"
-              }
-            }
-          ]
-        },
-        {
-          "uuid": "60db7c2f-ccab-41f0-8a28-d451e9c4468b",
-          "control-id": "ac-2.2",
-          "by-components": [
-            {
-              "component-uuid": "77924fd0-398c-44b8-bb2c-d862025fcd0b",
-              "uuid": "4bd28d93-da7e-437a-a82b-21497319eacb",
-              "description": "",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://oscal-compass.github.io/compliance-trestle/schemas/oscal",
+                  "value": "rule-sc-1"
+                }
+              ],
               "implementation-status": {
                 "state": "planned"
               }
             },
             {
-              "component-uuid": "ccc99dad-9d38-4b77-a801-194477e0ed30",
-              "uuid": "6b736b9e-8486-44b7-b475-c5f5e5ad381b",
-              "description": "My implementation for ac-2.2",
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "5d48f969-23b3-4d15-ada5-67762ddc9c46",
+              "description": "",
               "implementation-status": {
                 "state": "planned"
               }
@@ -3166,16 +3136,16 @@
           ]
         },
         {
-          "uuid": "5e0e81b8-0603-436f-9ac9-11d87ad901a1",
+          "uuid": "e5a7f8d1-071a-41c4-8651-11b553bcbe2d",
           "control-id": "ac-1",
           "statements": [
             {
               "statement-id": "ac-1_smt.a",
-              "uuid": "57e060eb-97fd-41fe-ad91-d428cc5bc67c",
+              "uuid": "e69bc840-3677-49a9-b293-b7d80d3fb25e",
               "by-components": [
                 {
-                  "component-uuid": "a6ce96d1-fa18-47cf-b2af-56c2a14bc71e",
-                  "uuid": "b9cd661d-d50b-47ad-a167-237b9861d072",
+                  "component-uuid": "ccc99dad-9d38-4b77-a801-194477e0ed30",
+                  "uuid": "6860a73f-ffe0-4454-b7f3-e90aad4d284d",
                   "description": "My example responses for ac-1 part a.",
                   "props": [
                     {
@@ -3193,22 +3163,6 @@
                     }
                   ],
                   "implementation-status": {
-                    "state": "planned"
-                  }
-                },
-                {
-                  "component-uuid": "976bc5a3-2a2c-4f4a-9006-267b350860cc",
-                  "uuid": "e0913021-4424-432b-9e2b-8c71f60cf3c3",
-                  "description": "My example responses for ac-1 part a.",
-                  "implementation-status": {
-                    "state": "partial"
-                  }
-                },
-                {
-                  "component-uuid": "ccc99dad-9d38-4b77-a801-194477e0ed30",
-                  "uuid": "11ac9e34-e3ea-45f9-a394-4407562357d3",
-                  "description": "My example responses for ac-1 part a.",
-                  "implementation-status": {
                     "state": "partial"
                   }
                 }
@@ -3217,8 +3171,8 @@
           ],
           "by-components": [
             {
-              "component-uuid": "77924fd0-398c-44b8-bb2c-d862025fcd0b",
-              "uuid": "283c8925-9dbb-4503-af19-843ed5484437",
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "77aaecfc-8b92-4280-a2db-6b6da74fcd8d",
               "description": "This system implementation for ac-1.",
               "implementation-status": {
                 "state": "planned"
@@ -3227,20 +3181,27 @@
           ]
         },
         {
-          "uuid": "4798521a-2880-4045-ba7f-2bd202768e82",
-          "control-id": "ac-4.4",
+          "uuid": "15c11721-02b8-4b51-8a45-02746b475557",
+          "control-id": "ac-2",
           "by-components": [
             {
-              "component-uuid": "77924fd0-398c-44b8-bb2c-d862025fcd0b",
-              "uuid": "3b706600-d57b-4ca4-871f-398742414e7f",
-              "description": "",
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "df6f8db1-946a-452e-8fe4-7cda79d64055",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idp_is_configured"
+                }
+              ],
               "implementation-status": {
-                "state": "planned"
+                "state": "implemented"
               }
             },
             {
-              "component-uuid": "ccc99dad-9d38-4b77-a801-194477e0ed30",
-              "uuid": "eb3f7d43-238f-40bd-9637-bfd694d0ef23",
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "6e1c2ba5-d1c5-49e3-96e7-07fab77f80ec",
               "description": "",
               "implementation-status": {
                 "state": "planned"
@@ -3249,12 +3210,4146 @@
           ]
         },
         {
-          "uuid": "84cb9081-2156-4fb6-9c70-e3f2d67c6011",
-          "control-id": "ac-2",
+          "uuid": "b78306e9-7e02-4e0a-860c-5e47c6582654",
+          "control-id": "ac-3",
           "by-components": [
             {
-              "component-uuid": "77924fd0-398c-44b8-bb2c-d862025fcd0b",
-              "uuid": "f7784e65-8b80-4d45-bc69-a3d6c5b45b10",
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "94b22872-cc64-422d-a704-c43bb3ab0630",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "b2819dce-808e-41c6-b9e3-a1340885f92b",
+          "control-id": "ac-7",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "835c39ac-15c9-4d44-ad89-b8de75f79bd2",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_idp_no_htpasswd"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idp_is_configured"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "800e9d5f-4a9e-4874-b3ab-d8bdd1832820",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "37cbc27f-ceb8-41d8-955c-05d0064660e6",
+          "control-id": "ac-8",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "ff112882-4d0f-4a35-8856-9612ab5fac34",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "openshift_motd_exists"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "banner_or_login_template_set"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "8f185845-1e03-4d05-89f9-d04656aae7a8",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "f48b1ecb-7110-4b3d-be85-d7caf0ed308b",
+          "control-id": "ac-14",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "de2e047a-70b3-48fd-a2c5-c7adfff344be",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "ddc51535-ce6c-415c-8e6a-920d998e4114",
+          "control-id": "ac-17",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "c124af01-e268-4fbc-9e6f-064c29f90af2",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "2908f8e5-b01f-4c04-b489-a526eea4c427",
+          "control-id": "ac-18",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "8394c4bf-b298-4d61-b656-40f745dbdf2a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "060a2ff4-5b35-435b-bc02-c1df04046cf9",
+          "control-id": "ac-19",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "ef76764d-c970-40b8-b449-8002fb5241dd",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "7bed9d09-6c4a-4dc1-b977-ac0f48c28c2d",
+          "control-id": "ac-20",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "f33c11ac-ffc2-473e-ab46-b8662659585b",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "e0c00afe-c8f8-4e4c-9e89-dd30e890cab3",
+          "control-id": "ac-22",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "9dd9853b-9d51-4a87-9f2b-0b34d1f52211",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "abec70c4-d3c4-4a00-a20f-41f9880e402c",
+          "control-id": "at-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "e3c9c7fe-78ef-4df6-8e3a-99a187e10a5f",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "d099650d-5a10-4c62-bea7-3fe791aaef0f",
+          "control-id": "at-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "9330686a-6152-4d08-bccd-823fe3b3200a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "c2e2f59e-d812-48eb-b91c-9b3bb7547ccf",
+          "control-id": "at-2.2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "998d8819-eb77-478d-b3a9-bd71ba75d7bf",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "9e0dfa99-8d09-422d-b6df-9a6e8505d4ef",
+          "control-id": "at-3",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "f998a2b4-8742-43b4-aea1-14ebbc06bfbd",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "35e9e719-6afe-480a-be56-a9a7ed678036",
+          "control-id": "at-4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "78110256-4657-464e-8836-df5bb10a0057",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a76c457b-fe05-4dcf-8c37-d5ee72e3e3f7",
+          "control-id": "au-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "446e933c-ce57-4ee4-8669-eb53c63c0ce2",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "6841dfe3-5f1b-476e-88f9-4b7ebe536c42",
+          "control-id": "au-2",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "f5d2d73e-eb07-4a59-8726-60d3bc3b193b",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_access_var_log_kube_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_profile_set"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_access_var_log_oauth_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_access_var_log_ocp_audit"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "var_openshift_audit_profile",
+                  "values": [
+                    "WriteRequestBodies"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "ac8d498e-63b0-4263-abf0-9d7ad924c94a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "cef812c1-107d-44f5-8e50-44225be7cd4d",
+          "control-id": "au-3",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "7d41ae51-fc44-40cd-af6f-12c3c13fcfa5",
+              "description": "Red Hat OpenShift enables auditing by default for the API Servers,\nthe OAuth server and the Linux hosts themselves. Auditing cannot\nbe turned off which makes the control inherently met.\n\nThe control asks for the following information to be audited:\n- what type of event occurred (verb is logged)\n- when the event occurred (timestamp is logged)\n- where the event occurred (request stage, the physical location of the file)\n- the source of the event (sourceIP, user are logged)\n- the outcome of the event (responseStatus is logged)\n- the identity of any individuals or subjects associated with\nthe event (user UUID is logged which can be correlated with the real\nidentity)\n\nMore documentation on what information Red Hat OpenShift audits can be found at:\nhttps://docs.openshift.com/container-platform/4.7/security/audit-log-view.html\nand:\nhttps://docs.openshift.com/container-platform/4.7/security/audit-log-policy-config.html",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_profile_set"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "var_openshift_audit_profile",
+                  "values": [
+                    "WriteRequestBodies"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "117389c0-adad-4a0e-9034-0ca9f9b875c9",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "7469aa82-4412-40ab-b5ca-8d95e3bc1909",
+          "control-id": "au-4",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "0dd734ad-d734-4beb-a66a-33508a65fafa",
+              "description": "Red Hat OpenShift audit logs are stored under the /var/log directory\non the master nodes, in particular /var/log/kube-apiserver,\n/var/log/openshift-apiserver and /var/log/oauth-apiserver. To make\nsure there is enough space for these logs, ensure that each of\nthe above directories resides on a separate partition.\n\nThe following document describes creating additional partitions:\nhttps://docs.openshift.com/container-platform/4.7/installing/installing_platform_agnostic/installing-platform-agnostic.html#installation-user-infra-machines-advanced_disk_installing-platform-agnostic",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "partition_for_var_log_kube_apiserver"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "partition_for_var_log_openshift_apiserver"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "partition_for_var_log_oauth_apiserver"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "ec456eb0-beac-4166-9330-232f0401a7cc",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "5d845282-7ccb-4bb1-af0d-bc5ed54a2e25",
+          "control-id": "au-5",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "60add378-2d80-423f-96b2-9bb93cea4b8e",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_error_alert_exists"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "025cfe82-c9ee-4405-a38a-dc91ed52d62a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "fab4a5c4-ada3-4b24-a6f4-8a561a04f1a1",
+          "control-id": "au-6",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "7a004137-e1c1-4da9-a21f-6e4f8aba8553",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_log_forwarding_enabled"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_profile_set"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "var_openshift_audit_profile",
+                  "values": [
+                    "WriteRequestBodies"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "4e52ab95-45df-483e-9f78-bc1d97449a3e",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "2fcae0b9-2a54-461c-8894-5128a0b7b2f9",
+          "control-id": "au-8",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "804a70d9-fa14-4357-909f-1e19f7b3b94d",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_profile_set"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "var_openshift_audit_profile",
+                  "values": [
+                    "WriteRequestBodies"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "9de84157-5d2d-408e-abd2-155c1f83b84f",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "eb8fdff6-2c00-402a-b808-dc1567fd136c",
+          "control-id": "au-9",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "b3dac0a5-89f2-48f1-ae63-67432474099f",
+              "description": "Access to and integrity of the audit records on the master nodes\nis protected by the usual operating system permissions.\n\nThis control is met when /var/log/kube-apiserver,\n/var/log/openshift-apiserver and /var/log/oauth-apiserver have\nthe permissions 0700 and the files under them 0600 and are\nowned by root.root.\n\nIn addition, if audit logs are being offloaded from the cluster\nusing Cluster Logging Operator, care must be taken to only\nuse TLS in transit - all ClusterLogForwarder outputs must use\neither https:// or tls:// as protocol. For more information, see\nhttps://docs.openshift.com/container-platform/4.6/logging/cluster-logging-external.html",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_permissions_var_log_oauth_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_log_forwarding_uses_tls"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_permissions_var_log_kube_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_profile_set"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_permissions_var_log_ocp_audit"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "var_openshift_audit_profile",
+                  "values": [
+                    "WriteRequestBodies"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "68186c63-07eb-44b4-b245-657f96827c50",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "6e265685-279d-44de-a854-17d4b26f9269",
+          "control-id": "au-11",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "1ec0daae-c581-43e7-8cd3-92984abfba64",
+              "description": "The Red Hat OpenShift audit logs are emitted by the API servers\nand stored on the master nodes.\nThe API servers do not support retaining audit logs for at least a\ndefined number of days, therefore the logs must be offloaded from\nthe cluster.\n\nThe Cluster Logging Operator is able to forward the Red Hat OpenShift\naudit logs so that they can be stored per organizational policy.\n\nhttps://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_log_forwarding_enabled"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "13e5d846-c4f8-4127-a97f-bda21f9303a6",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "4080ce6b-b349-43a3-ba14-fd4825edb42f",
+          "control-id": "au-12",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "719e8646-2e7a-455a-8e86-11a4c527d646",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_access_var_log_kube_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_profile_set"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_access_var_log_oauth_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_access_var_log_ocp_audit"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "var_openshift_audit_profile",
+                  "values": [
+                    "WriteRequestBodies"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "5503b46d-fea2-4ca9-8e05-fd5d7f993a25",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "0a8dc716-a865-46e0-b1bf-47df3f699c93",
+          "control-id": "ca-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "e47995f8-4fce-4641-b890-ab50f6445147",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "1bc3dbe9-e75e-403b-9433-07db9e7a8f68",
+          "control-id": "ca-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "4e53074c-b670-4c8d-8eee-cb55647d17d8",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "c7d15345-1c8e-4a51-ba04-94bef73572dd",
+          "control-id": "ca-2.1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "9bc7d0fc-3d65-4980-b417-3fa14748fd26",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "9077d6f2-bbfb-4c1e-8a3f-c117be85e3ac",
+          "control-id": "ca-3",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "86389c61-d9bc-4053-a8dd-a46baa9b997e",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a429a1f0-45be-4c33-9b01-d82b17b0a9e4",
+          "control-id": "ca-5",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "ccea3cfb-ff2d-48e6-9861-1851d7381017",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a2990c6e-0598-401f-a5e9-815a05a92f15",
+          "control-id": "ca-6",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "63c5bbb9-fbf7-4354-9307-4f8837ee78ee",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "8f45c2f1-3bd6-4c65-86e8-09ea421ba52b",
+          "control-id": "ca-7",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "b1ae7ea9-0c41-4c14-b16a-ae208d74f540",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "d261d07b-43c7-4764-8a4b-ee17052be30a",
+          "control-id": "ca-8",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "fdfa8e56-d622-4f7b-b806-70581b75e560",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "5d13ddd8-8d2a-43a2-b458-e9a0011ee602",
+          "control-id": "ca-9",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "eba9d5ac-f602-4a6e-8b91-2a3a5aeb1ffe",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "2e365ef8-0576-4820-9b0f-8d70867b06db",
+          "control-id": "cm-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "e6e324ed-1d0d-47ae-b455-f89d5cd48e0d",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "f4a388a4-2dc8-418f-a47b-b9e4633805f9",
+          "control-id": "cm-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "2e02e00a-d5d0-4fa7-a448-c240c9a76220",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "423d448e-f58f-4893-9aed-3828b805e9ce",
+          "control-id": "cm-4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "662451ad-7038-47ea-b231-1554d7cef9ae",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "b3a0a3a4-dcc8-4f5a-89c3-f749505b1a2b",
+          "control-id": "cm-5",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "e93794a0-5fa9-4b80-9b0e-25baf4a99f95",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "c14605bc-5c0c-4157-93ad-de9d1db89c6e",
+          "control-id": "cm-6",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "e9e2dcf3-883f-49db-b56d-308f47823169",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_perms_openshift_sdn_cniserver_config"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_openshift_sdn_cniserver_config"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_admission_control_plugin_namespacelifecycle"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_request_timeout"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_openshift_pki_key_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_cni_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_api_server_audit_log_maxsize"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_master_admin_kubeconfigs"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_ovsdb_server_pid"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_kube_scheduler"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_etcd_member"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_openshift_pki_cert_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_enable_server_cert_rotation"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_ovs_conf_db_lock"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "rbac_limit_secrets_access"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_worker_service"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_bind_address"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_audit_log_path"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_kubelet_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_kubelet"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_https_for_kubelet_conn"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_ovs_vswitchd_pid"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_audit_log_maxbackup"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_ovs_conf_db_lock"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_scheduler_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_multus_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_api_server_audit_log_maxbackup"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_peer_auto_tls"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_worker_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_kube_controller_manager"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_eviction_thresholds_set_hard_nodefs_available"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_kube_apiserver"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_kube_scheduler"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "accounts_restrict_service_account_tokens"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_ovs_vswitchd_pid"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scc_limit_ipc_namespace"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_certificate_authority"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scc_limit_privileged_containers"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_openshift_pki_key_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_secure_port"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_service_account_public_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "secrets_no_environment_variables"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_admission_control_plugin_noderestriction"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_client_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_ovs_sys_id_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_cni_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_worker_service"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_etcd_data_dir"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_controller_manager_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_api_priority_flowschema_catch_all"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_audit_log_maxsize"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_etcd_data_dir"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_etcd_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "general_default_namespace_use"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scc_limit_privilege_escalation"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "rbac_pod_creation_access"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_worker_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_auth_mode_no_aa"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_ovs_pid"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_ovsdb_server_pid"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_ip_allocations"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_ovs_conf_db"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_eviction_thresholds_set_hard_memory_available"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_token_auth"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_permissions_var_log_oauth_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_worker_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_controller_manager_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_ownership_var_log_kube_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_service_account_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_worker_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_enable_streaming_connections"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_authorization_mode"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "configure_network_policies_namespaces"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_unique_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_permissions_var_log_ocp_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_openshift_pki_cert_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_eviction_thresholds_set_hard_nodefs_inodesfree"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scc_limit_net_raw_capability"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_worker_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_access_var_log_ocp_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scc_limit_root_containers"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_openshift_pki_key_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_access_var_log_kube_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_peer_client_cert_auth"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_master_admin_kubeconfigs"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_integrity_exists"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_proxy_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_etcd_data_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_auth_mode_node"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_rotate_kubelet_server_certs"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_openshift_https_serving_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_service_account_lookup"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_openshift_pki_cert_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_var_log_kube_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "general_namespaces_in_use"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_kubelet_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_var_log_ocp_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "accounts_unique_service_account"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_admission_control_plugin_service_account"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_kube_controller_manager"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_enable_protect_kernel_sysctl"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_enable_protect_kernel_defaults"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_kubelet_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_kubelet"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_multus_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_enable_iptables_util_chains"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_service_account_private_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_worker_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_kube_apiserver"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_ovs_pid"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_event_creation"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_worker_service"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_access_var_log_oauth_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_key_file"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_master_admin_kubeconfigs"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_etcd_pki_cert_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_insecure_bind_address"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_proxy_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_enable_client_cert_rotation"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_ovs_sys_id_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_kube_apiserver"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_ovs_conf_db"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_anonymous_auth"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_controller_manager_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_openshift_sdn_cniserver_config"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "rbac_wildcard_use"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_proxy_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "general_apply_scc"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_cert_file"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_auth_mode_rbac"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_ownership_var_log_oauth_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_etcd_pki_cert_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "general_configure_imagepolicywebhook"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_etcd_data_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_cert_pre_4_9"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_etcd_data_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_etcd_member"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_scheduler_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_ownership_var_log_ocp_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "openshift_api_server_audit_log_path"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_profiling_protected_by_rbac"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_admission_control_plugin_alwaysadmit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scc_limit_container_allowed_capabilities"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_multus_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_key_pre_4_9"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_basic_auth"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_etcd_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_scheduler"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_eviction_thresholds_set_hard_imagefs_available"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_client_cert_auth"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_anonymous_auth"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_var_log_oauth_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scc_limit_process_id_namespace"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scc_drop_container_capabilities"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_insecure_port_disabled"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_no_adm_ctrl_plugins_disabled"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_kube_controller_manager"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_ip_allocations"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_etcd_member"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_scheduler_kubeconfig"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scansettingbinding_exists"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "general_default_seccomp_profile"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_ip_allocations"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_ovn_cni_server_sock"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_ovn_cni_server_sock"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_ovn_cni_server_sock"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_ovn_db_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_ovn_db_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_ovn_db_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_oauth_https_serving_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_permissions_ovs_vswitchd_pid"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "secrets_consider_external_storage"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_enable_cert_rotation"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_disable_readonly_port"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "configure_network_policies"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_admission_control_plugin_scc"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_etcd_pki_cert_files"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_etcd_data_dir"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_auto_tls"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_admission_control_plugin_alwayspullimages"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_use_service_account"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_ovs_sys_id_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_cni_conf"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "rbac_debug_role_protects_pprof"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "rbac_limit_cluster_admin"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_ovs_pid"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_admission_control_plugin_securitycontextdeny"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "directory_permissions_var_log_kube_audit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_ovs_conf_db_lock"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_owner_ovsdb_server_pid"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_tls_cipher_suites"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scc_limit_network_namespace"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "file_groupowner_ovs_conf_db"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "var_api_min_request_timeout",
+                  "values": [
+                    "3600"
+                  ]
+                },
+                {
+                  "param-id": "var_apiserver_bind_address",
+                  "values": [
+                    "0.0.0.0:6443"
+                  ]
+                },
+                {
+                  "param-id": "var_kubelet_tls_cipher_suites_regex",
+                  "values": [
+                    "^(TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384|TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384|TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256|TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256|TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256|TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256)$"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "4a5134a6-080f-4e60-b33b-3a9ae0e40d98",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "751d3bbc-286f-493b-91b7-08deae22fb1d",
+          "control-id": "cm-7",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "2a2c26f1-b3c0-4fdf-ac24-1ebaedb3844f",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "configure_network_policies_namespaces"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "69306602-7daf-417b-8042-f303f388ff5a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "e81bb8c5-685b-4de0-af6f-077c19a28054",
+          "control-id": "cm-8",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "072c9615-0d19-465e-bc0f-82c268175d55",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "c802e195-24e9-4755-86a6-359f88c7e31b",
+          "control-id": "cm-10",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "09609dc4-82ce-4e8b-beae-868681cd34bb",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "9c91bdfc-0160-4a69-a0c6-4f3b6a248106",
+          "control-id": "cm-11",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "f980419c-0e0f-4369-8e22-4fe7d907994f",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "reject_unsigned_images_by_default"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_allowed_registries_for_import"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_allowed_registries"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "ef9e0250-1a24-4491-aa21-505b3af61b71",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "dbacf225-8844-4dcf-8868-7e4e21cd0528",
+          "control-id": "cp-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "07913427-44aa-487c-b7f0-ad2f41cd9988",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "2b629b51-434c-4bdb-b561-4f01931db74e",
+          "control-id": "cp-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "311a129a-afcf-4640-af3f-5c1655fbc63f",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "318f0b39-39b4-400b-bcfd-19bd2f18d4fa",
+          "control-id": "cp-3",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "d373cb78-49a9-4d07-81d3-801dfb886acc",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "f23bcac4-b00b-4e8d-94bb-c41e3a748253",
+          "control-id": "cp-4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "13e9aa69-d18e-4ef7-8028-64b0050e5c1b",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "945c9ba8-5bd3-42f3-8eb8-e265bda8036e",
+          "control-id": "cp-9",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "6a323aad-6e46-49c1-920a-207a53f48d58",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "d7727a32-8f7d-4bbb-bd2d-d959ae5c8356",
+          "control-id": "cp-10",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "72789562-a3d2-42f1-b9f9-349cbac0f491",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "b412936f-267a-4272-a2e5-cd5149fa509f",
+          "control-id": "ia-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "297d3609-3fa3-43f1-b893-d807a6e327db",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "951ef89f-9995-4de9-b1ed-9d3e4edf578d",
+          "control-id": "ia-2",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "ef5aaf37-343e-49ce-a74b-eec53973d3d5",
+              "description": "Unique identification and authentication of organizational users\nis deferred to the organizational identity provider (such as\nLDAP, Active Directory, Red Hat SSO, etc). This part of the control\nis not applicable to OpenShift.\n\nTo aid system administrators in configuring a centralized identity provider, documentation on\nsupported authentication providers can be found in the\nOpenShift product documentation:\n\nhttps://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html\n\nThe ability to uniquely identify processes acting on behalf of\norganizational users, such as when a user deploys a new\ncontainer image, is provided by correlating system audit logs.",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_idp_no_htpasswd"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "e72664f8-c75e-4276-b35f-7d56044545db",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "5ce84c84-7867-4a5d-8690-e852cfec9ae1",
+          "control-id": "ia-2.1",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "e57591cc-dfd8-456d-a839-7aef631b5fff",
+              "description": "Implementation of multifactor authentication for network\naccess to privileged accounts is deferred to the\norganizational identity provider (such as\nLDAP, Active Directory, Red Hat SSO, etc).\nTo aid system administrators, documentation on\nsupported authentication providers can be found in the\nOpenShift product documentation:\n\nhttps://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html\n\nIt is recommended to use separate accounts for privileged access. For example, at least one account for regular user\naccess, and a separate account for cluster or project administrator access.\nThe organization must determine how to best break up privileged accesses based off of organizational\nneeds and requirements.",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_idp_no_htpasswd"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "3268598c-a088-4b48-990f-3c025df0b934",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "02d05140-91a5-4bad-82e1-0699bc6fdbb0",
+          "control-id": "ia-2.2",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "b200af47-48ab-4290-a604-7599fa5a0d36",
+              "description": "Implementing multifactor authentication for network access\nto non-privileged accounts is the responsibility of the\norganizational identity provider (such as\nLDAP, Active Directory, Red Hat SSO, etc).\n\nTo aid system administrators, documentation on\nsupported authentication providers can be found in the\nOpenShift product documentation:\n\nhttps://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_idp_no_htpasswd"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "d095e4ab-172c-4f9b-bd75-8d631634e468",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "ccb27de9-6a4f-4272-9a1e-815c3cafb8af",
+          "control-id": "ia-2.8",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "46e4f94b-e600-4874-a1a7-f074a70e530f",
+              "description": "OpenShift offers support for replay-resistant authentication\nmechanisms, both for OpenShift console and 3rd party\nauthentication. Third party identity providers configured for\nmodern TLS is supported by OpenShift.\n\nPlease see the specific identity provider documentation:\nhttps://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html\n\nWhen using the LDAP provider, care must be taken to not set\nthe \"insecure\" flag so that TLS is used.",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_no_ldap_insecure"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "idp_is_configured"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_idp_no_htpasswd"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "5ad20af3-e3af-487d-8c93-bf62a6d3ba3a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "36bb6957-2b64-4d8f-9c91-f1e11f5ab1d0",
+          "control-id": "ia-2.12",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "dae80f32-eef6-4f01-bb15-2afb35f51a35",
+              "description": "Acceptance and electronic verification of Personal\nIdentity Verification (PIV) credentials is the responsibility\nof the organizational identity provider (such as\nLDAP, Active Directory, Red Hat SSO, etc).\n\nTo aid system administrators, documentation on\nsupported authentication providers can be found in the\nOpenShift product documentation:\n\nhttps://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_idp_no_htpasswd"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "34c6a2f1-a0b7-4338-a873-4633a6e63b34",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "624fdc38-9067-4b85-81d5-3715199858b2",
+          "control-id": "ia-4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "f3700e93-b6ba-4484-9a93-3a4f1be3061c",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "f7abf68e-144a-4484-8d57-8f1fb571ea2f",
+          "control-id": "ia-5",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "43d1a37d-c91f-430f-9f0e-70a27ba1e1e8",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "3379eae6-969f-432c-872a-08ecd81ebed0",
+          "control-id": "ia-5.1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "d8e94960-19a7-42c0-8c46-c7652075a08f",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "3c03687c-d55d-4277-a243-3636cf5f58c6",
+          "control-id": "ia-6",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "31b3ea8f-537b-4e58-8b86-879cf2ff9a07",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "951e3428-d29c-4a58-a744-c5bf43fc5f08",
+          "control-id": "ia-7",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "ac10cdfb-1a07-441a-936e-885e261fea68",
+              "description": "FIPS mode can be enabled in OpenShift through a flag that\ncan be set at installation time [1]. Follow the relevant\ndocumentation for the applicable cloud provider [2][3][4][5]\nfor more information. But note that this is also applicable\nin on-prem deployments.\n\n[1] https://docs.openshift.com/container-platform/latest/installing/installing-fips.html\n[2] https://docs.openshift.com/container-platform/latest/installing/installing_aws/installing-aws-government-region.html#installation-configuration-parameters_installing-aws-government-region\n[3] https://docs.openshift.com/container-platform/4.7/installing/installing_azure/installing-azure-customizations.html\n[4] https://docs.openshift.com/container-platform/4.7/installing/installing_gcp/installing-gcp-customizations.html",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "fips_mode_enabled_on_all_nodes"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "4a842046-b61a-4da0-bf2d-8c0a2c838559",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "fb29d371-fc24-4c50-b665-d8c2c84a19a2",
+          "control-id": "ia-8",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "517a82cb-93d5-4e56-a66e-9876c7132ba3",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "42015220-ec52-44e4-9b55-4d57e7074c43",
+          "control-id": "ia-8.1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "a9f82536-7ca1-4c98-a714-9d14b71f8033",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "824ce881-d716-4575-a9d4-731236571deb",
+          "control-id": "ia-8.2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "702a23cf-efc8-417e-9bd0-2e70850059ef",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "872f4452-176a-4b82-81cb-381a65a8a144",
+          "control-id": "ia-8.4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "8b3352ba-f89b-4c87-9d7c-fde214efcdd8",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "7639d091-ea95-4525-bdfd-3d71d641da18",
+          "control-id": "ir-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "dff9b893-ebd3-4239-b573-c6263e4ea64b",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "e6bcc13e-ec0e-46b5-8f73-052eb4a8f8b6",
+          "control-id": "ir-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "a45a1dda-5993-4d8c-bfac-237b4d3aea2e",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "0bc06ffb-eddb-4128-a4b3-e3a2240b579b",
+          "control-id": "ir-4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "2f4eba6f-3ad6-4e9d-a118-d6f215e5c114",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "2e4ed759-806b-42f3-9a37-a1fc6a8276c4",
+          "control-id": "ir-5",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "5abe3b63-7897-4b21-807a-db8c2c4a5e10",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "b90ea879-6dba-47d1-b188-39e89b8824c6",
+          "control-id": "ir-6",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "df0a689b-92d3-49fe-accf-a33c14c2a705",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "9220ff58-4d23-4196-8846-42304523b260",
+          "control-id": "ir-7",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "5504bb4c-e9e0-4c79-96eb-0a2c542b1d23",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a10f57b5-b399-4982-95c4-362d07996105",
+          "control-id": "ir-8",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "5da8e6a4-77e8-410e-8216-894875033691",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "5f8905e0-0dc5-462a-aa36-91b812f11ad9",
+          "control-id": "ma-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "6f708735-6df7-44b3-b8c5-58ed04895c0c",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "6a1ad62a-612e-4047-8047-b776b857f921",
+          "control-id": "ma-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "0f37c143-c850-49dc-a9a2-3af979a06edc",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "82a00374-110a-4249-a9b2-a5fbedc14683",
+          "control-id": "ma-4",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "6c6afc85-4701-4647-adb1-66aca5ffa51f",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubeadmin_removed"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "b9b0c0fe-0833-4e4d-9671-128fb51010c2",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a810d724-2343-4bb2-9142-c926b519e254",
+          "control-id": "ma-5",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "db35d1fb-289c-43e9-965a-0ad6e26c9e92",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "0f2ace85-8e7a-46c6-9391-6e326faf47b1",
+          "control-id": "mp-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "37092d8c-78d0-476e-a570-fc8e32080218",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "cfd78855-1e86-4255-b9ba-c50e4df71093",
+          "control-id": "mp-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "054bcf3b-ad19-43c2-8c76-a5c33dca69e2",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "d2682d75-237a-439c-96a7-abb3c7974f74",
+          "control-id": "mp-6",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "95c6ec19-4824-430f-b19c-ee40c70eaee5",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "866f07a8-2e2c-4cf3-a394-c5aea7218e26",
+          "control-id": "mp-7",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "b333fb1a-e385-44d5-aab0-cd39096f3a9a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a3aad9ff-942d-43a2-bb22-c86e764e4391",
+          "control-id": "pe-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "1a326b31-2cc2-4642-a337-9de72f450954",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a9ef581b-1127-4de9-94af-0f933bae1c6b",
+          "control-id": "pe-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "789d7c57-a96f-4f8d-9474-155cd65b4c49",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "2d12cb89-028e-4198-b6d1-689384b90506",
+          "control-id": "pe-3",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "64422ea2-04f4-46b1-ada2-d89775a93701",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "997112c7-ddba-4e59-b49b-01af61474f93",
+          "control-id": "pe-6",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "a95cf618-a4dc-43b0-b87f-b431e07c0c1a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "4da2ae5a-30f4-48b2-886d-39a7c7c9fc63",
+          "control-id": "pe-8",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "060c02ac-9458-425e-96bf-1bea6150d9a4",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "88c1c7ff-9ed8-4f24-8604-233dec1efe0d",
+          "control-id": "pe-12",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "e5c99bab-e847-412e-9956-3b47ec5e7c92",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "6c663e07-c22e-41f3-9941-79392b1d1502",
+          "control-id": "pe-13",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "d29dee19-7413-4941-a4da-f31174f3c077",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "ee18098c-8e35-45c6-83fa-457ce6c3e4e2",
+          "control-id": "pe-14",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "3cfda8e9-f118-4307-b56f-bd6d79afcb55",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "b7f69d3a-4a8e-4828-a481-f952cbf2cde2",
+          "control-id": "pe-15",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "ec27b189-27a0-4fcb-8aee-91ed9f78faa3",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "2b84114f-62fe-43b5-acb2-2d71139fbbc9",
+          "control-id": "pe-16",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "07e04c44-7a24-4b8a-92ae-636205d5e235",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "b016a8eb-43fe-45cc-a0cf-51a9e74fc02d",
+          "control-id": "pl-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "662443ab-92c3-4f77-9241-dde017336e8e",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "9606daa3-6a76-4cbd-9859-7d478b214385",
+          "control-id": "pl-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "cb995f34-6c1a-4ce3-a7a7-553fb0437de7",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "4ce87ee4-7fd1-4a39-89b2-9d7db5b02289",
+          "control-id": "pl-4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "405e8b20-dd16-4002-864a-a52923e5328a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "9b4bc2ca-199f-4716-931b-be395f4ee3b8",
+          "control-id": "pl-4.1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "500a9af6-99c0-4b39-ac7a-8399d8c7b5b5",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "31355d47-e735-4ca9-b0bb-30097158f6fa",
+          "control-id": "pl-8",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "709b67c0-43df-4dbe-b453-bc1afbc309e5",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "9592ebdc-68c4-4726-8cc7-c99c4ab2d307",
+          "control-id": "ps-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "3ce33165-56e3-4ab5-9232-dfa69afb76ff",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "c8de0b7c-00a9-427e-b210-d7197bd1584e",
+          "control-id": "ps-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "038cb9c8-f254-49db-aeee-6bf7802f896a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "ac12f443-340c-4fed-8f6e-5928758d568c",
+          "control-id": "ps-3",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "2caee0de-7b39-4c5a-8d15-e747364669ba",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "e4712343-4f6e-4790-8c54-a2ef6b1504e5",
+          "control-id": "ps-4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "b9863c3c-ccaa-4975-8a5d-15554edf072f",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a8e269ce-a81b-4140-adab-7c59e03e52f6",
+          "control-id": "ps-5",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "f589a0ea-b055-4f37-a81c-68fdea17ec6c",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "ce22768e-6807-470e-90ca-77e3b02edab4",
+          "control-id": "ps-6",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "86da23eb-a172-4b4b-96b1-30dae0c4eb92",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "eaa2861b-88fc-4f13-9ba4-1257ed1f5bf8",
+          "control-id": "ps-7",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "0b093607-2342-410a-9032-eba50f36aa85",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "44fddfb4-c61e-493b-8de2-92f03b1108a6",
+          "control-id": "ps-8",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "3aec259c-e90d-4306-a847-111e389d8ed8",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a35ae96c-ba4b-4b03-8555-1d52743283c9",
+          "control-id": "ra-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "18b6e97e-3322-4b9c-956a-28f06410fa26",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "3e66f821-b552-4893-a18b-3e25a7008d38",
+          "control-id": "ra-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "17f8b206-4cac-4543-b443-b0a7e9bcf2d8",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "e4a3a0a9-2f6a-47d7-9cc0-583dcbe480f1",
+          "control-id": "ra-3",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "ca68328c-b878-4136-b8ab-beff4db65527",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "d99118aa-2963-4304-826c-f6027596a1ab",
+          "control-id": "ra-5",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "31c8d884-3d6c-48c9-b38c-98fdefd7866d",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "scansettingbinding_exists"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "ef994832-19ce-4a40-9cf3-36552ea0dfa4",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "d8c65862-6e11-4978-9a30-5d1d92944f5a",
+          "control-id": "ra-5.2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "fa88aa3d-c853-4fee-981e-221636e52f78",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "adb4b96e-34f8-4742-ab79-cb654c19a4f9",
+          "control-id": "sa-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "da0336ff-7ed2-4bf4-994c-a3193121744d",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "43ee3e18-9411-4c82-8988-eb37a3e9ed44",
+          "control-id": "sa-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "669003f6-b4e6-4679-a5db-763562cd0b39",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "e2372581-4127-46f7-8f6b-6ebe752b6e9d",
+          "control-id": "sa-3",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "a5708f2a-0a47-44c8-97cc-4cf0dd0ee6e3",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "75022191-2f21-43c6-8da9-3659a618a02f",
+          "control-id": "sa-4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "fbf86fe3-df6f-43ce-9c94-08fb23798132",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "4829c2a3-baf9-4e1c-9f35-729a8555613d",
+          "control-id": "sa-4.10",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "e3a5b49d-e708-4c16-8960-fbfb336b92fd",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "2c70a954-4a3f-4bde-8315-6b1d1c3475ab",
+          "control-id": "sa-5",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "6e17180b-5a05-403f-aa01-a0ad6860c3dc",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "70288317-5512-4feb-8ff5-b4b0c59ca330",
+          "control-id": "sa-8",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "0db1d1d7-4527-4f30-8bf1-841f7bc760e1",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "978c6480-db07-4d08-8b9b-63413157d3f1",
+          "control-id": "sa-9",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "d5b11c7b-93b4-4f90-bb61-f1d0041ff0ed",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "fe5c5f1a-dec7-43e5-87d4-ef546c686e3e",
+          "control-id": "sc-5",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "7b525965-b36b-4681-b471-8260a7a7d6cf",
+              "description": "Depending on the exposure of the workloads or the component that's\nintended to be protected, OpenShift offers several settings to enforce\nrate-limiting and protection against denial of service attacks.\n\nIt is recommended that all workloads in the system establish appropriate\nresource requests and limits to avoid resource starvation of critical\nworkloads. Appropriate configurations exist to manage resource\novercommitment [1]. Ensure that appropriate quotas are set in each\nrelevant project [2], or establish a cluster quota to limit the resources\nthat workloads can take [3].\n\nOpenShift also allows the configuration of egress and ingress traffic\nfor individual workloads [4]. This ensures that workloads don't get\noverwhelmed by incoming traffic, and that they don't act as Denial\nof Service agents.\n\nIf a workload is to be exposed externally, it is recommended that it's\nbehind an OpenShift Route. Routes allow for the configuration of several\nsecurity attributes, but most relevant to this control is the rate-limiting\nsettings that it allows to configure in the form of annotations. configuring\nrate-limiting settings for a workload exposed on a route not only protects\nthe workload itself, but also ensures that the target workload doesn't\ninterfere with other workloads placed on the same node or set of nodes.\n\nOn the other hand, OpenShift's API is configured with the Kubernetes API\nPriority & Fairness feature enabled by default. This feature allows for\nfine-grained configuration of the handling of incoming requests. [6]\nThis way it's possible to control how the cluster will react on an\noverload situation. By default, OpenShift has a catch-all configuration\nthat classifies every request.\n\nFinally, regardless of the environment that OpenShift is deployed in,\nit is assumed that there is a load balancer or load balancing service\nhandling requests for the OpenShift API. This provides redundancy and\nextra protection when dealing with Denial of Service attacks.\n\n[1] https://docs.openshift.com/container-platform/4.7/nodes/clusters/nodes-cluster-overcommit.html\n[2] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-per-project.html\n[3] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-across-multiple-projects.html\n[4] https://docs.openshift.com/container-platform/4.7/nodes/pods/nodes-pods-configuring.html#nodes-pods-configuring-bandwidth_nodes-pods-configuring\n[5] https://docs.openshift.com/container-platform/4.7/networking/routes/route-configuration.html#nw-route-specific-annotations_route-configuration\n[6] https://kubernetes.io/docs/concepts/cluster-administration/flow-control/\n\nhttps://issues.redhat.com/browse/CMP-427",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "routes_rate_limit"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "resource_requests_quota"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "e131b6b7-89ed-4cf0-8bea-657d8927e774",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "33c6dd5a-9fa6-411e-9599-102a97110c58",
+          "control-id": "sc-7",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "aa70cbc7-ed83-42fc-8b6a-5e6a3d4d730a",
+              "description": "REPLACE_ME",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "configure_network_policies_namespaces"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "02f49ed3-b625-4419-8c68-b815394890b0",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "bf503b49-49ad-429e-bdd5-c8aa3ff7adfe",
+          "control-id": "sc-8",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "1eb972f8-1365-4f3c-a9cb-f9c2566678f6",
+              "description": "The customer will be responsible for configuring TLS for transmitted\ninformation.",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_peer_key_file"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_etcd_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_service_account_private_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_client_cert_auth"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_insecure_port_disabled"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_key_file"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_https_for_kubelet_conn"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_tls_private_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_oauth_https_serving_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_service_account_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_etcd_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_client_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_tls_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_peer_auto_tls"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "routes_protected_by_tls"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ocp_no_ldap_insecure"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_cert_file"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_certificate_authority"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_auto_tls"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_cert_pre_4_9"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_tls_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_peer_client_cert_auth"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_secure_port"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_peer_cert_file"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_rotate_kubelet_server_certs"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_openshift_https_serving_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_etcd_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_tls_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_tls_cert_pre_4_9"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_key_pre_4_9"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_tls_security_profile"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ingress_controller_tls_security_profile"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_tls_min_version"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "var_kubelet_tls_min_version_regex",
+                  "values": [
+                    "^(?!VersionTLS10|VersionTLS11)"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "7f098675-afbf-43c7-aab9-8ffba8876eb2",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "7a51af9f-32cf-4569-81bb-480ab0833e6d",
+          "control-id": "sc-8.1",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "70ad1d1e-40c0-4cae-aeb8-a4c76040f276",
+              "description": "The customer will be responsible for implimenting cryptographic\nmechanisms to prevent unauthorized disclosure of information and\ndetect changes to information during transmission. A successful\ncontrol response will detail how encryption is used for all\nnetwork communications that carry customer data.",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_peer_key_file"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_etcd_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_service_account_private_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_client_cert_auth"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_insecure_port_disabled"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_key_file"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_https_for_kubelet_conn"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_tls_private_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_oauth_https_serving_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_service_account_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_etcd_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_client_ca"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_tls_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_peer_auto_tls"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "routes_protected_by_tls"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_cert_file"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_certificate_authority"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_auto_tls"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_cert_pre_4_9"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_tls_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_peer_client_cert_auth"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_secure_port"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "etcd_peer_cert_file"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "controller_rotate_kubelet_server_certs"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_openshift_https_serving_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_etcd_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_tls_cert"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_tls_cert_pre_4_9"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_key"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_kubelet_client_key_pre_4_9"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_tls_security_profile"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ingress_controller_tls_security_profile"
+                },
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "kubelet_configure_tls_min_version"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "var_kubelet_tls_min_version_regex",
+                  "values": [
+                    "^(?!VersionTLS10|VersionTLS11)"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "e6d9f55e-616b-47d4-ac3a-d3ad29d719a2",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "7fe8fae3-c12a-44ca-b7d5-a66ab1e468b6",
+          "control-id": "sc-12",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "6510f318-ca79-4faf-9689-413b75d9bcea",
+              "description": "While OpenShift allows to provide a custom PKI for external-facing TLS\nendpoints such as routes, there are far more internal-only trust stores\nwithin OCP that contain self-signed CAs that cannot be replaced by an\noutside CA. One example is the service-serving-ca, which creates\ncertificates only valid for the internal service network. [1] Other\nexamples include the node certificates [2], bootstrap certificates [3]\nor the etcd certificates [4].\n\nWhile the API Server certificates can't be replaced, it's possible to\nadd extra certificates that it will serve in case there's the need\nfor clients to have explicit trust for them. [5]\n\nEven though it is not possible to replace the internal CAs such as\nservice-serving-ca with organizational CAs, all the issued certificates\nare used for in-cluster communication only and not exposed outside\nthe cluster. In addition, the internal CAs create an implicit trust\nboundary, because no outside certificates are valid for the internal\nservices.  Moreover, OpenShift is responsible for automatically rotating\nboth the certificates and the service CA.\n\n[1] https://docs.openshift.com/container-platform/4.9/security/certificates/service-serving-certificate.html\n[2] https://docs.openshift.com/container-platform/4.9/security/certificate_types_descriptions/node-certificates.html\n[3] https://docs.openshift.com/container-platform/4.9/security/certificate_types_descriptions/bootstrap-certificates.html\n[4] https://docs.openshift.com/container-platform/4.9/security/certificate_types_descriptions/etcd-certificates.html\n[4] https://docs.openshift.com/container-platform/4.9/security/certificate_types_descriptions/user-provided-certificates-for-api-server.html\n\nNote that a full respose to externally-facing certificates will be provided\nseparately and is being tracked with:\nhttps://issues.redhat.com/browse/CMP-1042",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "ingress_controller_certificate"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "b8e7d3a7-8f8d-43c1-85f7-da49c599051f",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "ff46db39-d071-426d-bdd0-3d8e696973de",
+          "control-id": "sc-13",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "593fb36b-8268-41d7-8028-e141ea4e5e61",
+              "description": "FIPS mode can be enabled in OpenShift through a flag that\ncan be set at installation time [1]. Follow the relevant\ndocumentation for the applicable cloud provider [2][3][4][5]\nfor more information. But, note that this is also applicable\nin on-prem deployments.\n\n[1] https://docs.openshift.com/container-platform/latest/installing/installing-fips.html\n[2] https://docs.openshift.com/container-platform/latest/installing/installing_aws/installing-aws-government-region.html#installation-configuration-parameters_installing-aws-government-region\n[3] https://docs.openshift.com/container-platform/4.7/installing/installing_azure/installing-azure-customizations.html\n[4] https://docs.openshift.com/container-platform/4.7/installing/installing_gcp/installing-gcp-customizations.html",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "fips_mode_enabled_on_all_nodes"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "a0bec86b-1db9-46e2-9be5-071d65824f1a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "8b8b1533-37d8-435b-8bf3-66eb99a31811",
+          "control-id": "sc-15",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "1f3f8850-dd33-4115-86de-dad62e0a629c",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "985a998d-2e42-4b03-8762-f7a13c7a5c3a",
+          "control-id": "sc-20",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "5261b6be-b0db-4f9c-925d-fc58530313a2",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "eb2d21a8-deb0-44d0-9049-78dd053388c9",
+          "control-id": "sc-21",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "406c15dd-e04f-4e3c-8403-3cd1ba42d23e",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "a90d72b9-5337-48c4-9332-493767b56be8",
+          "control-id": "sc-22",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "8c1f4cc0-f02b-4e52-baa7-e67debef434f",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "1ff7bcad-8d0c-418a-aa34-9ad5f5051e81",
+          "control-id": "sc-28",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "52645998-7803-4c7d-9f8e-75292e03208a",
+              "description": "Information about the state of the system is stored in etcd.\nOpenShift has support for enabling etcd encryption [1], which\neffectively protects the confidentiality and integrity of\nthe cluster's runtime and workload-related information at rest.\n\n[1] https://docs.openshift.com/container-platform/latest/security/encrypting-etcd.html",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_encryption_provider_cipher"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "f0eecfda-5ffe-440b-84cd-2c45519b8f3b",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "657ceed5-33ed-4cba-b6e2-68a79fee3ee2",
+          "control-id": "sc-28.1",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "593816cc-a66b-4ed7-a8a9-974edc00d49f",
+              "description": "The customer is responsible for implementing cryptographic\nmechanisms to prevent unauthorzed disclosure and modification of\ncustomer data.\n\nWhen running on Red Hat Enterprise Linux, full disk encryption\nis possible for data at rest on the OpenShift nodes. For data\nin transport, OpenShift uses cryptographic algorithms and ciphers to\nprotect confidentiality and integrity of data in transport.\n\nInformation about the state of the system is stored in etcd.\nOpenShift has support for enabling etcd encryption [1], which\neffectively protects the confidentiality and integrity of\nthe cluster's runtime and workload-related information at rest.\n\n[1] https://docs.openshift.com/container-platform/latest/security/encrypting-etcd.html",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "api_server_encryption_provider_cipher"
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "e477e65c-0b15-4303-a3f1-21ac0be2a0c2",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "1bebb3c7-94ac-4f21-b446-58d0cfde0dcd",
+          "control-id": "sc-39",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "c860f66f-43c1-4177-bdbf-e77049ced053",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "1519481b-650e-44eb-bbf6-718ab470d3e1",
+          "control-id": "si-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "540eecc0-3d46-454c-9163-335004cbe3d4",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "c975bca2-a64b-49e2-ab74-c59e5c48ce94",
+          "control-id": "si-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "59500774-72fc-49d9-a2c6-c1c87fd95503",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "55c4f4e8-0acf-4428-9121-4989d6ee833b",
+          "control-id": "si-3",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "4353b537-cad3-4386-8aed-bae2229f7624",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "6fadd910-5f6b-4631-8c27-070d13b3fcc0",
+          "control-id": "si-4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "af2c4d2c-77cd-4053-8faa-28a5a2f1f495",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "fb82267e-fb32-41fb-be30-0231fc32cc7d",
+          "control-id": "si-5",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "82020a9c-0e38-4cbc-8068-82b80b4e6639",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "53be92d0-0322-4cca-8219-74c91fa1af42",
+          "control-id": "si-12",
+          "by-components": [
+            {
+              "component-uuid": "0be00eaa-b4a5-4193-b4eb-9423e06eae1f",
+              "uuid": "b2a45b3a-702d-4b6e-8982-7299404b84f8",
+              "description": "The customer will be responsible for handling and retaining\ninformation within, or hosted by, OpenShift in\naccordance with applicable federal laws, Executive Orders,\ndirectives, policies, regulations, standards, and operational\nrequirements.\n\nThis can be achieved with a combination of log forwarding [1]\nand backing up the etcd datastore [2]. The appropriate retention\nof the aforementioned data shall be ensured and determined by the customer.\n\n[1] https://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html\n[2] https://docs.openshift.com/container-platform/latest/backup_and_restore/backing-up-etcd.html",
+              "props": [
+                {
+                  "name": "Rule_Id",
+                  "ns": "https://ibm.github.io/compliance-trestle/schemas/oscal/cd",
+                  "value": "audit_profile_set"
+                }
+              ],
+              "set-parameters": [
+                {
+                  "param-id": "var_openshift_audit_profile",
+                  "values": [
+                    "WriteRequestBodies"
+                  ]
+                }
+              ],
+              "implementation-status": {
+                "state": "implemented"
+              }
+            },
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "a8f60aec-150e-4c0c-809b-68023978b24d",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "d7c9097e-0ad5-464b-b6de-8a5bec2b2ce9",
+          "control-id": "ac-2.2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "8e62f88d-0e9b-4936-abfb-0e02cc7385af",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "ccc99dad-9d38-4b77-a801-194477e0ed30",
+              "uuid": "4aa5cab1-b723-4f34-bc91-682274acee51",
+              "description": "My implementation for ac-2.2",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "5685980c-a245-48ce-b2cd-aa01f14df4ba",
+          "control-id": "ac-4.4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "ab072bb2-40dd-4572-b3f0-9bc5c1334bf5",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "ccc99dad-9d38-4b77-a801-194477e0ed30",
+              "uuid": "9547364f-0f02-4d25-b1b8-a43fef22247d",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "ab703138-026a-4bf0-996e-87caa364e602",
+          "control-id": "ca-7.4",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "f994ec4e-abca-483c-ac93-a6fa6d4d7c81",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "558201eb-438c-48fe-8e16-2a714d861958",
+          "control-id": "ia-11",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "69725249-cb2c-43f7-9543-88904d5ac290",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "afb31e1c-0a1e-49d6-8cfe-06ada36b1589",
+          "control-id": "pl-10",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "1ff34bad-21e3-4de3-be4e-c9db8faaa2f6",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "6c11e2a4-f564-427c-ad06-b98b007ab7ff",
+          "control-id": "pl-11",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "811ec7de-f026-4b03-bb40-cfae81be7e52",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "10f442c7-deeb-4850-ad09-5b0747c67868",
+          "control-id": "ps-9",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "938c788a-1e72-458b-bc2a-db39f2e3dc0c",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "036e300b-e248-4050-aeee-7d114575bc92",
+          "control-id": "ra-3.1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "1a4561b7-35e6-4da2-af47-a0564a139d87",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "5ff87707-90e4-4d58-aada-878f743639ef",
+          "control-id": "ra-5.11",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "faa4d446-b7f3-4541-a28d-6accbbf6c51a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "d3c38374-c7b2-4050-84af-eeccee684581",
+          "control-id": "ra-7",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "af022cfe-6d2b-4102-9f4e-1666169e9244",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "66922525-3e2e-44fe-becd-168af1cac509",
+          "control-id": "sa-22",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "d8fca2fa-c29a-4b29-a758-f3dd23a2fe50",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "604cf046-cb1a-4421-85a9-a1a71025e633",
+          "control-id": "sr-1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "cf6b9f1a-bf4d-4c0d-bd88-5179462ee749",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "46d3e37e-cdcc-43c3-a20f-3d3efdb146b2",
+          "control-id": "sr-10",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "56f83609-fb59-4211-8497-570ba4d18386",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "6b648b10-a8f6-49fc-b776-420f8f3bc6ba",
+          "control-id": "sr-11.1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "6d1204ea-f4fa-46d6-962e-eae97acdf986",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "3738b516-4d03-4457-8fb9-f6b3c7621ad9",
+          "control-id": "sr-11.2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "491526e1-81d7-416e-b998-7e13074acf1d",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "47285ea3-8aea-4364-ac14-ca95fe7cf453",
+          "control-id": "sr-11",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "61b0c36d-8870-4d12-af30-2a1a4bb91eb4",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "d35f1c7d-0268-4227-82c4-0b50400b7dbc",
+          "control-id": "sr-12",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "9e63d3ef-e0af-4f4b-bad4-5b8f3a9d70b7",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "821f57f9-22e3-46a7-aeb7-d3c22e9f6d68",
+          "control-id": "sr-2.1",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "a8a26706-3e61-46a6-9eb6-7c0deb4e5090",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "7d80bd73-92a0-4c86-9718-6f952494cc0f",
+          "control-id": "sr-2",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "affb8c43-fdb1-486f-85f5-74b73f5d91ae",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "d96886af-168b-4b30-adcd-9659f4c8d5e6",
+          "control-id": "sr-3",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "71f3a8a2-6e89-45bd-ac00-ca791bca44b0",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "c6aaeb61-4ad4-446f-ae40-6ee1f19834ac",
+          "control-id": "sr-5",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "2dd087e1-5360-40d7-a837-29b0de1b4ac2",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "5287d97b-7390-45fe-b9fb-117c6cad4ca4",
+          "control-id": "sr-8",
+          "by-components": [
+            {
+              "component-uuid": "3181a80f-fb12-4434-a726-530902012b16",
+              "uuid": "5018fdb3-acaa-4e53-ae26-f3c7b984a0d8",
               "description": "",
               "implementation-status": {
                 "state": "planned"

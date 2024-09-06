@@ -132,14 +132,14 @@ the OAuth server and the Linux hosts themselves. Auditing cannot
 be turned off which makes the control inherently met.
 
 The control asks for the following information to be audited:
-  - what type of event occurred (verb is logged)
-  - when the event occurred (timestamp is logged)
-  - where the event occurred (request stage, the physical location of the file)
-  - the source of the event (sourceIP, user are logged)
-  - the outcome of the event (responseStatus is logged)
-  - the identity of any individuals or subjects associated with
-    the event (user UUID is logged which can be correlated with the real
-    identity)
+- what type of event occurred (verb is logged)
+- when the event occurred (timestamp is logged)
+- where the event occurred (request stage, the physical location of the file)
+- the source of the event (sourceIP, user are logged)
+- the outcome of the event (responseStatus is logged)
+- the identity of any individuals or subjects associated with
+the event (user UUID is logged which can be correlated with the real
+identity)
 
 More documentation on what information Red Hat OpenShift audits can be found at:
 https://docs.openshift.com/container-platform/4.7/security/audit-log-view.html
