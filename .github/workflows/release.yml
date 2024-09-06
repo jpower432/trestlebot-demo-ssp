@@ -30,6 +30,7 @@ jobs:
           oscal_model: "ssp"
           commit_message: "Update content for release [skip ci]"
           version: ${{ github.event.inputs.version }}
+          verbose: true
       - name: Create and push tags
         env:
           VERSION: ${{ github.event.inputs.version }}
